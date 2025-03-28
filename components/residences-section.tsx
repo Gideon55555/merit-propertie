@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { ViewMore } from "./view-more";
 
 export function ResidencesSection() {
   const ref = useRef(null);
@@ -209,11 +210,6 @@ export function ResidencesSection() {
                           </div>
                         ))}
                     </div>
-
-                    <Button className="bg-merit-gold hover:bg-merit-gold/90 text-merit-green">
-                      Request More Information
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
                   </div>
 
                   <div className="relative order-1 lg:order-2">
@@ -235,6 +231,9 @@ export function ResidencesSection() {
             </TabsContent>
           ))}
         </Tabs>
+        <div className="flex justify-end mt-6 w-full">
+          <ViewMore href="/properties">View More</ViewMore>
+        </div>
       </div>
     </section>
   );

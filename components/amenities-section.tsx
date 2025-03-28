@@ -22,6 +22,7 @@ import {
   WashingMachine,
   WavesLadder,
 } from "lucide-react";
+import { ViewMore } from "./view-more";
 // import Image from "next/image";
 
 export function AmenitiesSection() {
@@ -123,6 +124,7 @@ export function AmenitiesSection() {
                 </motion.div>
               ))}
             </motion.div>
+            <ViewMore href="/amenities">View More</ViewMore>
           </div>
         </div>
       </div>
