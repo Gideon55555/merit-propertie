@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+// import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { ViewMore } from "./view-more";
 

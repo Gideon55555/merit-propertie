@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { AmenitiesPage } from "@/components/amenities/amenities-page";
-import LenisWrapper from "@/components/LenisWrapper";
+// import LenisWrapper from "@/components/LenisWrapper";
 
 export const metadata: Metadata = {
   title: "Amenities | Merit Real Estate",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
 export default function Amenities() {
   return (
     <div className="flex flex-col min-h-screen bg-merit-green">
-      <LenisWrapper>
+      {/* <LenisWrapper> */}
         <AmenitiesPage />
-      </LenisWrapper>
+      {/* </LenisWrapper> */}
 
       {/* JSON-LD structured data for SEO */}
       <script

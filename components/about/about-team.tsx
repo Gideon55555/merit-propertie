@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Linkedin, Twitter } from "lucide-react";
+import Image from "next/image";
 
 export function AboutTeam() {
   const ref = useRef(null);
@@ -76,9 +77,11 @@ export function AboutTeam() {
             <motion.div key={index} variants={itemVariants}>
               <div className="group">
                 <div className="relative overflow-hidden rounded-lg mb-6">
-                  <img
+                  <Image
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
+                    width={100}
+                    height={100}
                     className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-merit-green/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-6">

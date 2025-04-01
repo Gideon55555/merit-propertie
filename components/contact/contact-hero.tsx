@@ -26,8 +26,8 @@ export function ContactHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}>
             <p className="text-xl md:text-2xl font-secondary text-white/90 mb-8 leading-relaxed">
-              We're here to answer your questions and help you find your perfect
-              property. Reach out to our team today.
+              We&apos;re here to answer your questions and help you find your
+              perfect property. Reach out to our team today.
             </p>
           </motion.div>
 

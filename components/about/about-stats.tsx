@@ -62,7 +62,7 @@ export function AboutStats() {
             Merit By The Numbers
           </h2>
           <p className="font-secondary text-gray-700 max-w-3xl mx-auto">
-            Over the years, we've achieved significant milestones that reflect
+            Over the years, we&apos;ve achieved significant milestones that reflect
             our commitment to excellence and customer satisfaction.
           </p>
         </div>

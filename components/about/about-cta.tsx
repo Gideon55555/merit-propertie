@@ -31,7 +31,7 @@ export function AboutCta() {
                 Ready to Find Your Perfect Property?
               </h2>
               <p className="font-secondary text-white/80 mb-8 max-w-lg">
-                Whether you're looking for a new home, a commercial space, or an
+                Whether you&apos;re looking for a new home, a commercial space, or an
                 investment opportunity, Merit Real Estate has the perfect
                 property for you. Browse our current listings or contact our
                 team to discuss your specific needs.

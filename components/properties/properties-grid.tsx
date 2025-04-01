@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/select";
 import { MapPin, Bed, Bath, Square, Heart } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function PropertiesGrid() {
   const ref = useRef(null);
@@ -169,9 +170,11 @@ export function PropertiesGrid() {
             <motion.div key={property.id} variants={itemVariants}>
               <Card className="overflow-hidden h-full flex flex-col hover:shadow-lg transition-shadow duration-300 bg-merit-green/50 backdrop-blur-sm border border-white/10">
                 <div className="relative overflow-hidden">
-                  <img
+                  <Image
                     src={property.image || "/placeholder.svg"}
                     alt={property.title}
+                    width={100}
+                    height={100}
                     className="w-full h-64 object-cover transition-transform duration-500 hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 flex gap-2">

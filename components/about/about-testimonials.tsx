@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Quote } from "lucide-react";
 import { Badge } from "../ui/badge";
+import Image from "next/image";
 
 export function AboutTestimonials() {
   const ref = useRef(null);
@@ -60,7 +61,7 @@ export function AboutTestimonials() {
             What Our Clients Say
           </h2>
           <p className="font-secondary text-white/80 max-w-3xl mx-auto">
-            Don't just take our word for it. Hear from those who have
+            Don&apos;t just take our word for it. Hear from those who have
             experienced the Merit difference firsthand.
           </p>
         </div>
@@ -75,12 +76,14 @@ export function AboutTestimonials() {
               <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 h-full border border-white/10">
                 <Quote className="h-10 w-10 text-merit-gold/30 mb-6" />
                 <p className="font-secondary text-white/90 mb-8 italic">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
                 <div className="flex items-center">
-                  <img
+                  <Image
                     src={testimonial.image || "/placeholder.svg"}
                     alt={testimonial.name}
+                    width={100}
+                    height={100}
                     className="w-12 h-12 rounded-full object-cover mr-4"
                   />
                   <div>

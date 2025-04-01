@@ -110,7 +110,7 @@ export function LocationTransport() {
 
               <p>
                 Whether you prefer public transportation or private vehicles,
-                you'll appreciate the convenience of having multiple options at
+                you&apos;ll appreciate the convenience of having multiple options at
                 your disposal. From international airports to local bus
                 stations, everything is within comfortable reach.
               </p>

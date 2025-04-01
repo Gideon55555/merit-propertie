@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Badge } from "@/components/ui/badge";
 import { MapPin } from "lucide-react";
+import Image from "next/image";
 
 export function LocationOverview() {
   const ref = useRef(null);
@@ -34,8 +35,8 @@ export function LocationOverview() {
             <div className="space-y-6 font-secondary text-white/80">
               <p>
                 At Merit Real Estate, we understand that location is everything.
-                That's why we meticulously select the most strategic areas in
-                Addis Ababa for our developments, ensuring that our residents
+                That&apos;s why we meticulously select the most strategic areas
+                in Addis Ababa for our developments, ensuring that our residents
                 enjoy the perfect balance of convenience, accessibility, and
                 tranquility.
               </p>
@@ -44,16 +45,16 @@ export function LocationOverview() {
                 Our properties are situated in prime neighborhoods that offer
                 easy access to essential amenities, business districts,
                 educational institutions, healthcare facilities, and
-                recreational spaces. Whether you're looking for a vibrant urban
-                setting or a more serene environment, we have locations that
-                cater to diverse preferences and lifestyles.
+                recreational spaces. Whether you&apos;re looking for a vibrant
+                urban setting or a more serene environment, we have locations
+                that cater to diverse preferences and lifestyles.
               </p>
 
               <p>
-                By choosing a Merit property, you're not just investing in a
-                home or business space; you're investing in a location that
-                enhances your quality of life and offers excellent potential for
-                appreciation over time.
+                By choosing a Merit property, you&apos;re not just investing in
+                a home or business space; you&apos;re investing in a location
+                that enhances your quality of life and offers excellent
+                potential for appreciation over time.
               </p>
             </div>
 
@@ -72,7 +73,9 @@ export function LocationOverview() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative">
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
-              <img
+              <Image
+                width={100}
+                height={100}
                 src="/placeholder.svg?height=600&width=800"
                 alt="Merit Real Estate Location"
                 className="w-full h-auto"

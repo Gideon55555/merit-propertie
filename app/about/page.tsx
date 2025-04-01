@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { AboutHero } from "@/components/about/about-hero";
 import { AboutStory } from "@/components/about/about-story";
 import { AboutValues } from "@/components/about/about-values";
-import { AboutTeam } from "@/components/about/about-team";
+// import { AboutTeam } from "@/components/about/about-team";
 import { AboutStats } from "@/components/about/about-stats";
 import { AboutTestimonials } from "@/components/about/about-testimonials";
 import { AboutCta } from "@/components/about/about-cta";

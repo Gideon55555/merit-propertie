@@ -5,7 +5,7 @@ export const amenitiesData = [
     heading: "Enjoy a Peaceful Retreat in the Residential SPA",
     description:
       "Escape to tranquility at our Residential SPA. Experience rejuvenating Jacuzzi space, and amenities designed to relax your mind and refresh your spirit. Your peaceful retreat awaits.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/amenities/spa.jpg",
     features: [
       "Luxurious sauna with natural stone elements",
       "Rejuvenating jacuzzi with temperature control",
@@ -22,7 +22,7 @@ export const amenitiesData = [
     heading: "Dive into Luxury at Our Resort-Style Pool",
     description:
       "Our stunning pool area offers a perfect blend of relaxation and recreation. With crystal clear waters, comfortable lounging areas, and attentive service, it's your own private oasis in the heart of the city.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/amenities/pool.jpg",
     features: [
       "Temperature-controlled swimming pool",
       "Separate children's wading pool",
@@ -39,7 +39,7 @@ export const amenitiesData = [
     heading: "State-of-the-Art Fitness Center for Active Living",
     description:
       "Our comprehensive fitness center is equipped with the latest cardio and strength training equipment to support your wellness journey. With professional trainers available and spacious workout areas, achieving your fitness goals has never been more convenient.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/amenities/gym.jpg",
     features: [
       "Premium cardio and strength training equipment",
       "Dedicated yoga and stretching area",
@@ -55,8 +55,8 @@ export const amenitiesData = [
     title: "Groceries",
     heading: "Convenient On-Site Grocery and Essentials",
     description:
-      "Never worry about last-minute shopping trips again. Our on-site grocery store offers fresh produce, everyday essentials, and specialty items, ensuring that convenience is always at your doorstep.",
-    image: "/placeholder.svg?height=800&width=1200",
+      "Never worry about last-mpoolinute shopping trips again. Our on-site grocery store offers fresh produce, everyday essentials, and specialty items, ensuring that convenience is always at your doorstep.",
+    image: "/images/amenities/grocery.jpg",
     features: [
       "Fresh produce delivered daily",
       "Essential household items",
@@ -73,7 +73,7 @@ export const amenitiesData = [
     heading: "Professional Property Management at Your Service",
     description:
       "Our dedicated management team ensures that your living experience is seamless and worry-free. From maintenance requests to community events, we're here to provide exceptional service and support.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/amenities/pool.jpg",
     features: [
       "24/7 responsive management team",
       "Online portal for service requests",
@@ -90,7 +90,7 @@ export const amenitiesData = [
     heading: "Elegant Welcome in Our Designer Lobby",
     description:
       "Make a grand entrance every day through our beautifully designed lobby. With comfortable seating areas, attentive concierge service, and striking architectural elements, our lobby sets the tone for the luxury experience that awaits within.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/amenities/lobby.jpg",
     features: [
       "24-hour concierge service",
       "Comfortable waiting areas",
@@ -107,7 +107,7 @@ export const amenitiesData = [
     heading: "Uninterrupted Power Solutions for Modern Living",
     description:
       "Enjoy peace of mind with our reliable power systems. Our properties feature backup generators, sustainable energy options, and smart power management to ensure your comfort and convenience are never compromised.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/amenities/power.jpg",
     features: [
       "Backup generator systems",
       "Solar power integration",
@@ -124,7 +124,7 @@ export const amenitiesData = [
     heading: "Secure and Convenient Parking Facilities",
     description:
       "Our thoughtfully designed parking facilities offer security, convenience, and ample space for residents and their guests. With 24/7 monitoring and easy access, parking worries become a thing of the past.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/amenities/parking.jpg",
     features: [
       "Assigned resident parking spaces",
       "Visitor parking availability",
@@ -141,7 +141,7 @@ export const amenitiesData = [
     heading: "Comprehensive Security for Your Peace of Mind",
     description:
       "Your safety is our priority. Our multi-layered security systems include 24/7 monitoring, controlled access, and trained personnel to ensure that you and your loved ones can enjoy life with complete peace of mind.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/amenities/security.jpg",
     features: [
       "24/7 security personnel",
       "Advanced surveillance systems",

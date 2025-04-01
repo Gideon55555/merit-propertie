@@ -27,12 +27,12 @@ export function PropertiesCta() {
           className="bg-merit-green/50 backdrop-blur-sm rounded-lg border border-white/10 p-12 md:p-16">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-primary text-white mb-6">
-              Can't Find What You're Looking For?
+              Can&apos;t Find What You&apos;re Looking For?
             </h2>
             <p className="font-secondary text-white/80 mb-8">
               Our portfolio is constantly growing with new and exciting
               properties. Contact our team to discuss your specific
-              requirements, and we'll help you find the perfect property or
+              requirements, and we&apos;ll help you find the perfect property or
               notify you when something matching your criteria becomes
               available.
             </p>

@@ -1,0 +1,17 @@
+.scroll-snap-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+.scroll-snap-container::-webkit-scrollbar {
+  display: none;
+}
+/* .sticky-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  transition: transform 0.3s ease;
+} */

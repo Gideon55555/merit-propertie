@@ -1,10 +1,11 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { amenitiesData } from "@/components/amenities/amenities-data";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 interface AmenitiesContentProps {
   amenityId: string;
@@ -15,8 +16,50 @@ export function AmenitiesContent({ amenityId }: AmenitiesContentProps) {
 
   if (!amenity) return null;
 
+  const ref = useRef(null);
+  const inView = useInView(ref); // Fully visible
+  const imageControls = useAnimation();
+  const textControls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      textControls.start({
+        opacity: 1,
+        y: 0,
+        transition: {
+          delay: 0.5,
+          duration: 0.5,
+          ease: "easeInOut",
+        },
+      });
+      imageControls.start({
+        width: "100%",
+        zIndex: 1,
+        transition: {
+          delay: 1,
+          duration: 0.5, // Duration for the scale animation
+          ease: "easeInOut",
+        },
+      });
+    } else {
+      textControls.start({
+        opacity: 0,
+        y: 200,
+        transition: {
+          duration: 0.5,
+          ease: "easeInOut",
+        },
+      });
+      imageControls.start({ width: 0 });
+    }
+  }, [inView, textControls, imageControls]);
+
   return (
-    <div className="h-full flex flex-col">
+    <section
+      ref={ref}
+      key={amenityId}
+      id={amenityId}
+      className="h-screen flex justify-center items-center snap-always snap-start">
       <div className="flex-1 flex flex-col md:flex-row pt-24 pb-8 px-4 md:px-8 lg:px-12 overflow-y-auto">
         <div className="w-full md:w-1/2 md:pr-8 mb-8 md:mb-0">
           <motion.div
@@ -34,7 +77,7 @@ export function AmenitiesContent({ amenityId }: AmenitiesContentProps) {
 
               {amenity.features && (
                 <div className="mt-8">
-                  <h3 className="font-primary text-xl text-merit-gold mb-4">
+                  <h3 className="font-sans text-xl text-merit-gold mb-4">
                     Features
                   </h3>
                   <ul className="space-y-2">
@@ -68,18 +111,23 @@ export function AmenitiesContent({ amenityId }: AmenitiesContentProps) {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="h-full">
+            className="h-[300px] md:h-[500px] w-full overflow-hidden rounded-xl relative">
             <div className="relative h-64 md:h-full rounded-lg overflow-hidden shadow-xl">
-              <img
+              <motion.img
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.3, ease: "easeInOut" },
+                }}
+                initial={{ scale: 1 }}
                 src={amenity.image || "/placeholder.svg"}
                 alt={amenity.title}
-                className="w-full h-full object-cover"
+                className="object-cover rounded-xl h-full w-full"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-merit-green/40 to-transparent"></div>
             </div>
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

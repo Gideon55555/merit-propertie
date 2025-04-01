@@ -6,7 +6,7 @@ import { useRef, useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MapPin, Navigation, Plus, Minus, Layers } from "lucide-react";
-import Map from "../map";
+// import Map from "../map";
 
 export function LocationMap() {
   const ref = useRef(null);
@@ -20,10 +20,10 @@ export function LocationMap() {
     visible: { opacity: 1, y: 0 },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
+  // const itemVariants = {
+  //   hidden: { opacity: 0, y: 20 },
+  //   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  // };
 
   // This is a simplified map implementation
   // In a real application, you would integrate with Google Maps, Mapbox, or another mapping service

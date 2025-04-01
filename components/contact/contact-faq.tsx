@@ -62,7 +62,7 @@ export function ContactFaq() {
           </h2>
           <p className="font-secondary text-white/80 max-w-3xl mx-auto">
             Find answers to commonly asked questions about our properties,
-            services, and processes. If you don't see your question here, feel
+            services, and processes. If you don&apos;t see your question here, feel
             free to contact us directly.
           </p>
         </div>

@@ -64,24 +64,25 @@ export function AboutStory() {
 
               <p>
                 What started as a small team with big dreams has grown into one
-                of Ethiopia's most respected real estate developers, with a
+                of Ethiopia&apos;s most respected real estate developers, with a
                 portfolio of successful residential, commercial, and mixed-use
                 projects across Addis Ababa and beyond.
               </p>
 
               <p>
-                Throughout our journey, we've remained committed to our founding
-                principles: unwavering quality, ethical business practices, and
-                a customer-first approach. These values have guided every
-                project we've undertaken and every relationship we've built.
+                Throughout our journey, we&apos;ve remained committed to our
+                founding principles: unwavering quality, ethical business
+                practices, and a customer-first approach. These values have
+                guided every project we&apos;ve undertaken and every
+                relationship we&apos;ve built.
               </p>
 
               <p>
                 Today, Merit Real Estate stands as a testament to what can be
                 achieved when vision meets execution. Our buildings dot the
                 skyline of Addis Ababa, but our true legacy lies in the
-                communities we've helped create and the lives we've enhanced
-                through thoughtful, purposeful development.
+                communities we&apos;ve helped create and the lives we&apos;ve
+                enhanced through thoughtful, purposeful development.
               </p>
             </div>
           </motion.div>
