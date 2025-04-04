@@ -130,7 +130,7 @@ export function ResidencesSection() {
   // const currentResidence = residences[activeTab as keyof typeof residences];
 
   return (
-    <section id="residences" className="merit-green-section py-20" ref={ref}>
+    <section id="residences" className="merit-green-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-7xl md:text-9xl font-serif font-bold text-white opacity-20 leading-tight mb-8">
@@ -176,7 +176,7 @@ export function ResidencesSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                   <div className="order-2 lg:order-1">
                     <div className="mb-6">
-                      <h3 className="text-2xl md:text-3xl font-serif font-bold text-merit-gold mb-2">
+                      <h3 className="!text-3xl font-serif font-bold text-merit-gold mb-2">
                         {residence.title}
                       </h3>
                       <p className="!text-merit-gold font-medium">

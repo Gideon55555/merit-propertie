@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Clock } from "lucide-react";
+import { MapPin } from "lucide-react";
 import Map from "./map";
 
 export function LocationSection() {
@@ -61,7 +59,10 @@ export function LocationSection() {
   ];
 
   return (
-    <section id="location" className="merit-green-section py-20" ref={ref}>
+    <section
+      id="location"
+      className="merit-green-section py-12 md:py-20"
+      ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-7xl md:text-9xl font-serif font-bold text-white opacity-20 leading-tight mb-8">
@@ -86,31 +87,22 @@ export function LocationSection() {
             className="space-y-4">
             {locations.map((location, index) => (
               <motion.div key={index} variants={itemVariants}>
-                <Card className="overflow-hidden hover:shadow-md transition-shadow bg-merit-green/40 border-merit-gold/30">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="bg-merit-gold/20 p-3 rounded-full shrink-0">
-                        <MapPin className="h-6 w-6 text-merit-gold" />
-                      </div>
-                      <div>
-                        <div className="flex items-center gap-2 mb-1">
-                          <h3 className="font-serif font-bold text-white">
-                            {location.name}
-                          </h3>
-                          <Badge
-                            variant="outline"
-                            className="text-merit-gold border-merit-gold">
-                            <Clock className="h-3 w-3 mr-1" />{" "}
-                            {location.distance}
-                          </Badge>
-                        </div>
-                        <p className="text-white/80 text-sm">
-                          {location.description}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 h-full border border-white/10 hover:border-merit-gold/30 transition-all duration-300">
+                  <div className="bg-merit-gold/10 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                    <MapPin className="h-6 w-6 text-merit-gold" />
+                  </div>
+                  <h3 className="font-primary text-xl text-white mb-4">
+                    {location.name}
+                  </h3>
+                  <p className="font-secondary text-white/70 mb-4">
+                    {location.description}
+                  </p>
+                  <div className="flex items-center mt-auto">
+                    <span className="text-xs font-secondary uppercase tracking-wider text-merit-gold bg-merit-gold/10 px-3 py-1 rounded-full">
+                      {location.distance}
+                    </span>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </motion.div>

@@ -185,16 +185,16 @@ export function AmenitiesPage() {
   // }, [activeAmenity]);
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row bg-merit-green overflow-hidden">
+    <div className="md:min-h-screen flex flex-col md:flex-row bg-merit-green overflow-hidden">
       {/* Sidebar */}
-      <div className="sticky-container flex flex-col z-10 md:flex-row min-h-screen relative">
+      <div className="sticky-container md:border-r md:border-merit-gold/10 flex flex-col z-10 md:flex-row md:min-h-screen relative">
         {/* <nav className="w-full md:w-64 lg:w-80 bg-merit-green/80 backdrop-blur-sm border-r border-white/10 flex-shrink-0"> */}
-        <div className="w-full flex flex-col md:pt-28 md:pb-8 py-4 px-4 md:h-screen items-center fixed z-50 md:sticky left-0 bottom-0 md:w-[20rem] backdrop-blur">
+        <div className="w-full flex flex-col md:pt-28 md:pb-8 py-3 md:py-4 px-4 md:h-screen items-center fixed z-50 md:sticky left-0 bottom-0 md:w-[20rem] backdrop-blur">
           {/* sticky top-0 flex flex-col */}
-          <h2 className="font-primary text-2xl text-white px-4">Amenities</h2>
+          <h2 className="font-primary hidden md:block font-b text-2xl text-white px-4">Amenities</h2>
           {/* <div className="w-full flex items-center absolute md:sticky left-0 z-10 bottom-0 md:w-[30rem] backdrop-blur"> */}
           <div
-            className="flex items-center overflow-x-auto w-full md:h-screen px-3 pb-2 shadow-sm pt-6 md:p-6"
+            className="flex items-center overflow-x-auto w-full md:h-screen px-3 md:pb-2 shadow-sm md:p-6"
             style={{ scrollbarWidth: "none" }}>
             <div className="relative h-fit">
               <div className="absolute left-0 -top-2 md:top-0 bottom-0 w-full h-[1px] md:w-0.5 md:h-auto bg-merit-gold/10"></div>
@@ -216,24 +216,23 @@ export function AmenitiesPage() {
                       amenity.id.slice(1).replace("-", " ")}
                     {activeAmenity === amenity.id && (
                       <>
-                        {/* Mobile */}
+                        {/* Desktop */}
                         <motion.div
-                          layoutId="activeIndicator"
+                          layoutId="desktopActiveIndicator"
                           className="hidden md:block absolute md:left-0 right-0 md:top-0 bottom-0 w-full h-1 md:w-1 bg-merit-gold rounded-full"
                           initial={{ height: 0 }}
                           animate={{ height: "100%" }}
                           transition={{ duration: 0.3 }}
                         />
-                        {/* Desktop */}
+                        {/* Mobile */}
                         <motion.div
-                          layoutId="activeIndicator"
-                          className="md:hidden absolute md:left-0 right-0 md:top-0 bottom-0 w-full h-1 md:w-1 bg-merit-gold rounded-full"
+                          layoutId="mobileActiveIndicator"
+                          className="md:hidden block absolute md:left-0 right-0 md:top-0 bottom-0 w-full h-1 md:w-1 bg-merit-gold rounded-full"
                           initial={{ width: 0 }}
                           animate={{ width: "100%" }}
                           transition={{ duration: 0.3 }}
                         />
                       </>
-                      // <span className="absolute -top-3 left-1/2 right-1/2 -translate-x-1/2 transition-all duration-300 md:translate-x-0 md:top-3 md:left-[-4px] h-2.5 w-2.5 rounded-full bg-primary"></span>
                     )}
                   </a>
                 ))}

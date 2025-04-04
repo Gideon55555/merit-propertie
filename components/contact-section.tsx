@@ -18,7 +18,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="merit-green-section py-20" ref={ref}>
+    <section id="contact" className="merit-green-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-7xl md:text-9xl font-serif font-bold text-white opacity-20 leading-tight mb-8">

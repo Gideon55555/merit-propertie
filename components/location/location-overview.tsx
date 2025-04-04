@@ -17,7 +17,7 @@ export function LocationOverview() {
   };
 
   return (
-    <section className="merit-green-section py-20" ref={ref}>
+    <section className="merit-green-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -76,13 +76,13 @@ export function LocationOverview() {
               <Image
                 width={100}
                 height={100}
-                src="/placeholder.svg?height=600&width=800"
+                src="/images/location.jpg"
                 alt="Merit Real Estate Location"
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-2/3 h-2/3 bg-merit-gold/20 rounded-lg -z-10" />
-            <div className="absolute -top-6 -left-6 w-1/2 h-1/2 bg-white/5 rounded-lg -z-10" />
+            <div className="absolute -bottom-6 -right-6 w-2/3 h-2/3 bg-merit-gold/20 rounded-lg" />
+            <div className="absolute -top-6 -left-6 w-1/2 h-1/2 bg-white/5 rounded-lg" />
           </motion.div>
         </div>
       </div>

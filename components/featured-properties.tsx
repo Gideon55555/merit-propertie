@@ -65,7 +65,7 @@ export function FeaturedProperties() {
   }
 
   return (
-    <section id="properties" className="py-20 bg-gray-50" ref={ref}>
+    <section id="properties" className="bg-gray-50 py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="bg-merit-green/10 text-merit-green hover:bg-merit-green/20 mb-4">Our Properties</Badge>

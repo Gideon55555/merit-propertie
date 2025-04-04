@@ -16,7 +16,7 @@ export const ViewMore = React.forwardRef<
     <button
       ref={ref}
       className={cn(
-        "group self-end relative w-auto cursor-pointer overflow-hidden rounded-full border border-merit-gold text-merit-gold bg-transparent p-2 px-6 text-center",
+        "group self-end mt-6 relative w-auto cursor-pointer overflow-hidden rounded-full border border-merit-gold text-merit-gold bg-transparent p-2 px-6 text-center",
         className
       )}
       {...props}>

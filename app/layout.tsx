@@ -4,6 +4,7 @@ import { Avenir, GlensCity } from "@/lib/fonts";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 // import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
@@ -62,7 +63,7 @@ export default function RootLayout({
           disableTransitionOnChange>
           <Navbar />
           <main className="overflow-x-hidden">{children}</main>
-          {/* <Footer /> */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -4,22 +4,14 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import {
-  Building,
   Car,
   Cctv,
-  ConciergeBell,
   CookingPot,
-  Dog,
-  Droplet,
   Dumbbell,
-  Flower,
-  House,
   Plug,
-  PlugZap,
   Trash,
   Truck,
   Volleyball,
-  WashingMachine,
   WavesLadder,
 } from "lucide-react";
 import { ViewMore } from "./view-more";
@@ -54,18 +46,18 @@ export function AmenitiesSection() {
     { name: "KIDS PLAYGROUND", icon: <Volleyball /> },
     { name: "GARBAGE CHUTES", icon: <Trash /> },
     { name: "24/7 SECURITY", icon: <Cctv /> },
-    { name: "RECEPTION AREA", icon: <ConciergeBell /> },
-    { name: "OUTDOOR GARDEN", icon: <Flower /> },
-    { name: "PET-FRIENDLY AREA", icon: <Dog /> },
-    { name: "LAUNDRY ROOM", icon: <WashingMachine /> },
-    { name: "HIGH-END ELEVATORS", icon: <Building /> },
-    { name: "EV CHARGING STATIONS", icon: <PlugZap /> },
-    { name: "MULTIPURPOSE HALL", icon: <House /> },
-    { name: "WATER FILTERATION SYSTEM", icon: <Droplet /> },
+    // { name: "RECEPTION AREA", icon: <ConciergeBell /> },
+    // { name: "OUTDOOR GARDEN", icon: <Flower /> },
+    // { name: "PET-FRIENDLY AREA", icon: <Dog /> },
+    // { name: "LAUNDRY ROOM", icon: <WashingMachine /> },
+    // { name: "HIGH-END ELEVATORS", icon: <Building /> },
+    // { name: "EV CHARGING STATIONS", icon: <PlugZap /> },
+    // { name: "MULTIPURPOSE HALL", icon: <House /> },
+    // { name: "WATER FILTERATION SYSTEM", icon: <Droplet /> },
   ];
 
   return (
-    <section id="amenities" className="merit-green-section py-20" ref={ref}>
+    <section id="amenities" className="merit-green-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-12 items-center">
           {/* <div className="relative h-full">
@@ -124,7 +116,7 @@ export function AmenitiesSection() {
                 </motion.div>
               ))}
             </motion.div>
-            <ViewMore href="/amenities">View More</ViewMore>
+            <ViewMore className="mt-4" href="/amenities">View More</ViewMore>
           </div>
         </div>
       </div>

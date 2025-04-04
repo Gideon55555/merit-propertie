@@ -12,6 +12,9 @@ const LenisWrapper = ({ children }: { children: React.ReactNode }) => {
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
+    return () => {
+      lenis.destroy(); // Clean up when component unmounts
+    };
   }, []);
   return <>{children}</>;
 };

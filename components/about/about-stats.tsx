@@ -52,7 +52,7 @@ export function AboutStats() {
   };
 
   return (
-    <section className="merit-green-section py-20" ref={ref}>
+    <section className="merit-green-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="text-merit-green font-secondary uppercase tracking-wider text-sm font-medium">

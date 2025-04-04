@@ -17,7 +17,7 @@ export function AboutCta() {
   };
 
   return (
-    <section className="merit-green-section py-20" ref={ref}>
+    <section className="merit-green-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           variants={fadeIn}

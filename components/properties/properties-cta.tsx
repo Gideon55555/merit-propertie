@@ -17,7 +17,7 @@ export function PropertiesCta() {
   };
 
   return (
-    <section className="py-20 bg-merit-green/80" ref={ref}>
+    <section className="merit-green-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div
           variants={fadeIn}

@@ -21,7 +21,7 @@ export function PrefaceSection() {
   // };
 
   return (
-    <section id="preface" className="merit-green-section py-20" ref={ref}>
+    <section id="preface" className="merit-green-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           {/* <Badge className="bg-merit-gold/20 text-merit-gold hover:bg-merit-gold/30 mb-4">

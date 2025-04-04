@@ -65,7 +65,7 @@ export function AboutValues() {
   ];
 
   return (
-    <section className="merit-green-section py-20" ref={ref}>
+    <section className="merit-green-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-gold/20 mb-4">

@@ -55,7 +55,7 @@ export function TestimonialsSection() {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-white" ref={ref}>
+    <section id="testimonials" className="bg-white py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="bg-merit-green/10 text-merit-green hover:bg-merit-green/20 mb-4">

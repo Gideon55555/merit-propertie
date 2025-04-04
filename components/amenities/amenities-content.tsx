@@ -2,9 +2,6 @@
 
 import { motion, useAnimation, useInView } from "framer-motion";
 import { amenitiesData } from "@/components/amenities/amenities-data";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 interface AmenitiesContentProps {
@@ -13,8 +10,6 @@ interface AmenitiesContentProps {
 
 export function AmenitiesContent({ amenityId }: AmenitiesContentProps) {
   const amenity = amenitiesData.find((item) => item.id === amenityId);
-
-  if (!amenity) return null;
 
   const ref = useRef(null);
   const inView = useInView(ref); // Fully visible
@@ -53,13 +48,19 @@ export function AmenitiesContent({ amenityId }: AmenitiesContentProps) {
       imageControls.start({ width: 0 });
     }
   }, [inView, textControls, imageControls]);
-
+  if (!amenity) {
+    return (
+      <section className="h-screen flex justify-center items-center">
+        Loading...
+      </section>
+    );
+  }
   return (
     <section
       ref={ref}
       key={amenityId}
       id={amenityId}
-      className="h-screen flex justify-center items-center snap-always snap-start">
+      className="min-h-screen border-b border-merit-gold/20 flex justify-center items-center snap-always snap-start">
       <div className="flex-1 flex flex-col md:flex-row pt-24 pb-8 px-4 md:px-8 lg:px-12 overflow-y-auto">
         <div className="w-full md:w-1/2 md:pr-8 mb-8 md:mb-0">
           <motion.div
@@ -91,7 +92,7 @@ export function AmenitiesContent({ amenityId }: AmenitiesContentProps) {
                 </div>
               )}
 
-              {amenity.ctaText && (
+              {/* {amenity.ctaText && (
                 <div className="mt-8">
                   <Button
                     asChild
@@ -101,7 +102,7 @@ export function AmenitiesContent({ amenityId }: AmenitiesContentProps) {
                     </Link>
                   </Button>
                 </div>
-              )}
+              )} */}
             </div>
           </motion.div>
         </div>
@@ -111,8 +112,8 @@ export function AmenitiesContent({ amenityId }: AmenitiesContentProps) {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="h-[300px] md:h-[500px] w-full overflow-hidden rounded-xl relative">
-            <div className="relative h-64 md:h-full rounded-lg overflow-hidden shadow-xl">
+            className="h-[200px] md:h-[500px] w-full overflow-hidden rounded-xl relative">
+            {/* <div className="relative h-64 md:h-full rounded-lg overflow-hidden shadow-xl"> */}
               <motion.img
                 whileHover={{
                   scale: 1.1,
@@ -124,7 +125,7 @@ export function AmenitiesContent({ amenityId }: AmenitiesContentProps) {
                 className="object-cover rounded-xl h-full w-full"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-merit-green/40 to-transparent"></div>
-            </div>
+            {/* </div> */}
           </motion.div>
         </div>
       </div>
