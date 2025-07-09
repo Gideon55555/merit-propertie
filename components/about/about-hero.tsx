@@ -1,21 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function AboutHero() {
   return (
     <section className="relative h-[70vh] flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <div
-          className="w-full h-full bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(21, 72, 67, 0.9), rgba(21, 72, 67, 0.7)), url('/images/about.png')",
-          }}
-        />
-      </div>
-
+      <Image
+        src="/images/about.png"
+        alt="About Merit"
+        fill
+        style={{ objectFit: "cover", objectPosition: "center" }}
+        sizes="100vw"
+        priority={false}
+      />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to right, rgba(21, 72, 67, 0.9), rgba(21, 72, 67, 0.7))",
+        }}
+      />
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl">
           <motion.div

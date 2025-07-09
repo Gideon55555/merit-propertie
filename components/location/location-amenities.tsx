@@ -79,16 +79,16 @@ export function LocationAmenities() {
   ];
 
   return (
-    <section className="merit-green-section py-12 md:py-20" ref={ref}>
+    <section className="merit-light-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-gold/20 mb-4">
             Amenities
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-wider text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-wider mb-6">
             Nearby Amenities
           </h2>
-          <p className="font-secondary text-white/80 max-w-3xl mx-auto">
+          <p className="font-secondary  max-w-3xl mx-auto">
             Our properties are strategically located to provide convenient
             access to a wide range of amenities, ensuring that everything you
             need is within easy reach.
@@ -102,14 +102,14 @@ export function LocationAmenities() {
           animate={isInView ? "visible" : "hidden"}>
           {amenities.map((amenity, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 h-full border border-white/10 hover:border-merit-gold/30 transition-all duration-300">
+              <div className="shadow-sm backdrop-blur-sm rounded-lg p-8 h-full border border-merit-gold/20 hover:border-merit-gold/40 transition-all duration-300">
                 <div className="bg-merit-gold/10 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
                   <amenity.icon className="h-8 w-8 text-merit-gold" />
                 </div>
-                <h3 className="font-primary text-xl text-white mb-4">
+                <h3 className="font-primary !text-gray-700 opacity-20 text-xl mb-4">
                   {amenity.title}
                 </h3>
-                <p className="font-secondary text-white/70 mb-4">
+                <p className="font-secondary mb-4">
                   {amenity.description}
                 </p>
                 <div className="flex items-center mt-auto">

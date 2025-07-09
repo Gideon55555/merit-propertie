@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { useRef } from "react";
+import Image from "next/image";
 
 export function HeroSection() {
   const container = useRef(null);
@@ -17,14 +18,21 @@ export function HeroSection() {
 
   return (
     <section className="relative h-screen overflow-hidden">
-      {/* Background Image */}
       <motion.div style={{ y }} className="relative flex items-center h-full">
         <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero.png"
+            alt="Hero background"
+            fill
+            style={{ objectFit: "cover", objectPosition: "center" }}
+            sizes="100vw"
+            priority={false}
+          />
           <div
-            className="w-full h-full bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center"
+            className="absolute inset-0"
             style={{
-              backgroundImage:
-                "linear-gradient(to right, rgba(21, 72, 67, 0.8), rgba(21, 72, 67, 0.4)), url('/images/hero.png')",
+              background:
+                "linear-gradient(to right, rgba(21, 72, 67, 0.8), rgba(21, 72, 67, 0.4))",
             }}
           />
         </div>

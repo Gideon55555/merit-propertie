@@ -51,16 +51,16 @@ export function AboutTestimonials() {
   ];
 
   return (
-    <section className="merit-green-section py-12 md:py-20" ref={ref}>
+    <section className="merit-light-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-gold/20 mb-4">
             Testimonials
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-primary text-white mt-2 mb-6">
+          <h2 className="text-4xl md:text-5xl font-primary mt-2 mb-6">
             What Our Clients Say
           </h2>
-          <p className="font-secondary text-white/80 max-w-3xl mx-auto">
+          <p className="font-secondary max-w-3xl mx-auto">
             Don&apos;t just take our word for it. Hear from those who have
             experienced the Merit difference firsthand.
           </p>
@@ -73,9 +73,9 @@ export function AboutTestimonials() {
           animate={isInView ? "visible" : "hidden"}>
           {testimonials.map((testimonial, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 h-full border border-white/10">
-                <Quote className="h-10 w-10 text-merit-gold/30 mb-6" />
-                <p className="font-secondary text-white/90 mb-8 italic">
+              <div className="bg-white/5 backdrop-blur-sm shadow-sm rounded-lg p-8 h-full border border-merit-gold/20 hover:border-merit-gold/40">
+                <Quote className="h-10 w-10 mb-6" />
+                <p className="font-secondary mb-8 italic">
                   &quot;{testimonial.quote}&quot;
                 </p>
                 <div className="flex items-center">
@@ -87,8 +87,8 @@ export function AboutTestimonials() {
                     className="w-12 h-12 rounded-full object-cover mr-4"
                   />
                   <div>
-                    <h4 className="font-sans text-white">{testimonial.name}</h4>
-                    <p className="font-secondary text-merit-gold/80 text-sm">
+                    <h4 className="font-sans">{testimonial.name}</h4>
+                    <p className="font-secondary text-sm">
                       {testimonial.role}
                     </p>
                   </div>

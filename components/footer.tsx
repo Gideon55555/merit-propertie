@@ -29,25 +29,25 @@ export default function Footer() {
               {/* <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="text-gray-700 hover:text-white transition-colors"
+                  className="text-gray-700 hover:text-text-gray-900 transition-colors"
                   aria-label="Facebook">
                   <Facebook size={20} />
                 </a>
                 <a
                   href="#"
-                  className="text-gray-700 hover:text-white transition-colors"
+                  className="text-gray-700 hover:text-text-gray-900 transition-colors"
                   aria-label="Instagram">
                   <Instagram size={20} />
                 </a>
                 <a
                   href="#"
-                  className="text-gray-700 hover:text-white transition-colors"
+                  className="text-gray-700 hover:text-text-gray-900 transition-colors"
                   aria-label="Twitter">
                   <Twitter size={20} />
                 </a>
                 <a
                   href="#"
-                  className="text-gray-700 hover:text-white transition-colors"
+                  className="text-gray-700 hover:text-text-gray-900 transition-colors"
                   aria-label="LinkedIn">
                   <Linkedin size={20} />
                 </a>
@@ -60,42 +60,42 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     Home
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/about"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     About Us
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/properties"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     Properties
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/amenities"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     Amenities
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/location"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     Location
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/contact"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     Contact
                   </Link>
                 </li>
@@ -110,35 +110,35 @@ export default function Footer() {
                 <li>
                   <Link
                     href="#residences"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     Urban Comfort Residences
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#residences"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     Harmony Heaven Residences
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#residences"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     Grand Via Residences
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#contact"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     Request Information
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#contact"
-                    className="text-gray-700 hover:text-white transition-colors">
+                    className="text-gray-700 hover:text-text-gray-900 transition-colors">
                     Schedule a Viewing
                   </Link>
                 </li>

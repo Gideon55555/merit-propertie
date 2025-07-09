@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Check } from "lucide-react";
 import Image from "next/image";
+import { ViewMore } from "./view-more";
 
 export function ChampioningSection() {
   const ref = useRef(null);
@@ -26,7 +27,7 @@ export function ChampioningSection() {
   };
 
   return (
-    <section className="merit-green-section py-12 md:py-20" ref={ref}>
+    <section className="merit-light-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -34,13 +35,13 @@ export function ChampioningSection() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6 }}>
-            <h2 className="text-7xl md:text-9xl font-serif font-bold text-white opacity-20 leading-tight mb-8">
+            <h2 className="text-7xl md:text-9xl font-serif font-bold leading-tight mb-8">
               Championing
               <br />
               Excellence
             </h2>
 
-            <p className="text-white/90 mb-8">
+            <p className="mb-8">
               At Merit Real Estate, we believe that exceptional living spaces
               should be accessible to all. Our commitment to excellence drives
               us to create properties that combine innovative design, quality
@@ -64,10 +65,10 @@ export function ChampioningSection() {
                   key={index}
                   variants={itemVariants}
                   className="flex items-center gap-2">
-                  <div className="bg-merit-gold/20 p-1 rounded-full">
+                  <div className="bg-merit-gold/30 p-1 rounded-full">
                     <Check className="h-4 w-4 text-merit-gold" />
                   </div>
-                  <span className="text-white/90">{item}</span>
+                  <span className="">{item}</span>
                 </motion.div>
               ))}
             </motion.div>
@@ -89,8 +90,11 @@ export function ChampioningSection() {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-2/3 h-2/3 bg-merit-gold/20 rounded-lg" />
-            <div className="absolute -top-6 -left-6 w-1/2 h-1/2 bg-white/10 rounded-lg" />
-            </motion.div>
+            <div className="absolute -top-6 -left-6 w-1/2 h-1/2 bg-merit-green/10 rounded-lg" />
+          </motion.div>
+        </div>
+        <div className="w-full mt-10 flex justify-end">
+          <ViewMore href="/properties">View More</ViewMore>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import { ViewMore } from "./view-more";
 
 export function RevolutionizingSection() {
   const ref = useRef(null);
@@ -48,36 +49,41 @@ export function RevolutionizingSection() {
             {/* <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-green/20 mb-4">
               merit realestate
             </Badge> */}
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
               Revolutionizing Modern Living in Real Estate
             </h2>
 
-            <p className="text-gray-700 mb-6">
+            <p className="mb-6">
               Whether you&apos;re searching for a luxurious home, a modern
               apartment, or a high-potential commercial unit, we have
               meticulously curated options in prime locations to ensure the
               perfect blend of comfort, convenience, and accessibility.
             </p>
 
-            <p className="text-gray-700 mb-6">
+            <p className="mb-6">
               Our portfolio is as diverse as our clientele, encompassing
               residential properties that redefine opulence and functionality,
               as well as commercial spaces that promise high returns and
               strategic advantages.
             </p>
 
-            <p className="text-gray-700 mb-6">
+            <p className="mb-6">
               What sets us apart is our relentless focus on improving quality
               and embracing innovation. From leveraging advanced technology to
               ensuring personalized services, we are committed to staying ahead
               in an ever-evolving industry.
             </p>
 
-            <p className="text-gray-700 mb-6">
+            <p className="mb-6">
               Our deep market knowledge and dedicated team of professionals
               enable us to guide our clients through every step of their real
               estate journey with transparency, expertise, and care.
             </p>
+            <div className="w-full mt-4 flex justify-end">
+              <ViewMore href="/about">
+                Learn More
+              </ViewMore>
+            </div>
           </motion.div>
         </div>
       </div>

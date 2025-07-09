@@ -57,7 +57,10 @@ export function AmenitiesSection() {
   ];
 
   return (
-    <section id="amenities" className="merit-green-section py-12 md:py-20" ref={ref}>
+    <section
+      id="amenities"
+      className="merit-light-section py-12 md:py-20"
+      ref={ref}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-12 items-center">
           {/* <div className="relative h-full">
@@ -78,13 +81,13 @@ export function AmenitiesSection() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6 }}
               className="mb-10">
-              <h2 className="text-7xl md:text-9xl font-serif font-bold text-center text-white opacity-20 leading-tight mb-8">
+              <h2 className="text-7xl md:text-9xl font-serif font-bold text-center leading-tight mb-8">
                 Amenities and Facilities
                 {/* <br /> */}
                 {/* <br /> */}
               </h2>
 
-              <div className="space-y-6 text-white/90">
+              <div className="space-y-6">
                 <p className="text-center">
                   Whether you are a young professional, a growing family, or
                   someone seeking a serene retreat in the middle of the city,
@@ -107,16 +110,18 @@ export function AmenitiesSection() {
                   key={index}
                   variants={itemVariants}
                   className="flex flex-col items-center">
-                  <div className="amenity-item">
-                    <div className="amenity-icon flex items-center justify-center">
+                  <div className="bg-merit-gold/10 p-3 rounded-full w-14 h-14 flex items-center justify-center">
+                    <div className="h-8 w-8 flex items-center justify-center text-merit-gold">
                       {amenity.icon}
                     </div>
-                    <span className="amenity-text">{amenity.name}</span>
                   </div>
+                  <span className="mt-4 text-sm text-center">{amenity.name}</span>
                 </motion.div>
               ))}
             </motion.div>
-            <ViewMore className="mt-4" href="/amenities">View More</ViewMore>
+            <ViewMore className="mt-4" href="/amenities">
+              View More
+            </ViewMore>
           </div>
         </div>
       </div>

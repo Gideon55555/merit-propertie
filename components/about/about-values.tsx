@@ -65,16 +65,16 @@ export function AboutValues() {
   ];
 
   return (
-    <section className="merit-green-section py-12 md:py-20" ref={ref}>
+    <section className="merit-light-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-gold/20 mb-4">
             What Drives Us
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-primary text-white mt-2 mb-6">
+          <h2 className="text-4xl md:text-5xl font-primary mt-2 mb-6">
             Our Core Values
           </h2>
-          <p className="font-secondary text-white/80 max-w-3xl mx-auto">
+          <p className="font-secondary max-w-3xl mx-auto">
             These principles guide every decision we make and every project we
             undertake, ensuring that we consistently deliver on our promise of
             excellence.
@@ -88,14 +88,14 @@ export function AboutValues() {
           animate={isInView ? "visible" : "hidden"}>
           {values.map((value, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 h-full border border-white/10 hover:border-merit-gold/30 transition-all duration-300">
+              <div className=" backdrop-blur-sm shadow-sm rounded-lg p-8 h-full border border-merit-gold/20 hover:border-merit-gold/40 transition-all duration-300">
                 <div className="bg-merit-gold/10 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
                   <value.icon className="h-8 w-8 text-merit-gold" />
                 </div>
-                <h3 className="font-primary text-xl text-white mb-4">
+                <h3 className="font-primary !text-gray-700 opacity-20 text-xl mb-4">
                   {value.title}
                 </h3>
-                <p className="font-secondary text-white/70">
+                <p className="font-secondary">
                   {value.description}
                 </p>
               </div>

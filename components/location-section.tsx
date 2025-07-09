@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { MapPin } from "lucide-react";
 import Map from "./map";
+import { ViewMore } from "./view-more";
 
 export function LocationSection() {
   const ref = useRef(null);
@@ -109,6 +110,9 @@ export function LocationSection() {
 
           <Map itemVariants={itemVariants} isInView={isInView} />
         </div>
+          <div className="w-full mt-4 flex justify-end">
+            <ViewMore href="/location">Learn More</ViewMore>
+          </div>
       </div>
     </section>
   );

@@ -57,7 +57,7 @@ export function LocationTransport() {
   ];
 
   return (
-    <section className="merit-green-section py-12 md:py-20" ref={ref}>
+    <section className="merit-light-section py-12 md:py-20" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -68,14 +68,14 @@ export function LocationTransport() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {transportOptions.map((option, index) => (
                 <motion.div key={index} variants={itemVariants}>
-                  <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 h-full border border-white/10 hover:border-merit-gold/30 transition-all duration-300">
+                  <div className="shadow-sm backdrop-blur-sm rounded-lg p-8 h-full border border-merit-gold/20 hover:border-merit-gold/40 transition-all duration-300">
                     <div className="bg-merit-gold/10 p-3 rounded-full w-14 h-14 flex items-center justify-center mb-4">
                       <option.icon className="h-7 w-7 text-merit-gold" />
                     </div>
-                    <h3 className="font-primary !text-5xl font-bold tracking-wider text-white mb-2">
+                    <h3 className="font-primary !text-gray-700 opacity-20 !text-5xl font-bold tracking-wider mb-2">
                       {option.title}
                     </h3>
-                    <p className="font-secondary text-white/70 text-md mb-3">
+                    <p className="font-secondary text-md mb-3">
                       {option.description}
                     </p>
                     <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-gold/20">
