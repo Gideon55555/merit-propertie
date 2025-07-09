@@ -83,8 +83,6 @@ export function AmenitiesSection() {
               className="mb-10">
               <h2 className="text-7xl md:text-9xl font-serif font-bold text-center leading-tight mb-8">
                 Amenities and Facilities
-                {/* <br /> */}
-                {/* <br /> */}
               </h2>
 
               <div className="space-y-6">
