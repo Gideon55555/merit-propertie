@@ -24,10 +24,11 @@ export function AboutStory() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6 }}
-            className="relative">
+            className="relative"
+          >
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/preface-section.jpg"
+                src="/images/design/image-00066.png"
                 height={500}
                 width={500}
                 alt="Merit Real Estate Building"
@@ -42,7 +43,8 @@ export function AboutStory() {
             variants={fadeIn}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            transition={{ duration: 0.6, delay: 0.2 }}>
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             <div className="text-center mb-12">
               <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-gold/20 mb-4">
                 Our Journey

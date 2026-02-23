@@ -24,11 +24,12 @@ export function RevolutionizingSection() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="order-2 lg:order-1">
+            className="order-2 lg:order-1"
+          >
             <div className="relative">
               <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/revolutionalizing-section.jpg"
+                  src="/images/design/image-00017.png"
                   height={500}
                   width={500}
                   alt="Modern Living Space"
@@ -45,7 +46,8 @@ export function RevolutionizingSection() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6 }}
-            className="order-1 lg:order-2">
+            className="order-1 lg:order-2"
+          >
             {/* <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-green/20 mb-4">
               merit realestate
             </Badge> */}
@@ -80,9 +82,7 @@ export function RevolutionizingSection() {
               estate journey with transparency, expertise, and care.
             </p>
             <div className="w-full mt-4 flex justify-end">
-              <ViewMore href="/about">
-                Learn More
-              </ViewMore>
+              <ViewMore href="/about">Learn More</ViewMore>
             </div>
           </motion.div>
         </div>

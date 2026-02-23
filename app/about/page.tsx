@@ -7,6 +7,7 @@ import { AboutStats } from "@/components/about/about-stats";
 import { AboutTestimonials } from "@/components/about/about-testimonials";
 import { AboutCta } from "@/components/about/about-cta";
 import LenisWrapper from "@/components/LenisWrapper";
+import { AboutTeam } from "@/components/about/about-team";
 
 export const metadata: Metadata = {
   title: "About Merit Real Estate | Our Story, Values & Team",

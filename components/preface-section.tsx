@@ -21,7 +21,11 @@ export function PrefaceSection() {
   // };
 
   return (
-    <section id="preface" className="merit-green-section py-12 md:py-20" ref={ref}>
+    <section
+      id="preface"
+      className="merit-green-section py-12 md:py-20"
+      ref={ref}
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           {/* <Badge className="bg-merit-gold/20 text-merit-gold hover:bg-merit-gold/30 mb-4">
@@ -41,7 +45,8 @@ export function PrefaceSection() {
             variants={fadeIn}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            transition={{ duration: 0.6 }}>
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="text-7xl md:text-9xl font-serif font-bold text-white opacity-20 leading-tight mb-8">
               The Preface
             </h2>
@@ -72,10 +77,11 @@ export function PrefaceSection() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative">
+            className="relative"
+          >
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/preface-section.jpg"
+                src="/images/design/image-00005.jpg"
                 height={500}
                 width={500}
                 alt="Merit Real Estate Building"

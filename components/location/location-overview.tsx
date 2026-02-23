@@ -24,7 +24,8 @@ export function LocationOverview() {
             variants={fadeIn}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            transition={{ duration: 0.6 }}>
+            transition={{ duration: 0.6 }}
+          >
             <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-gold/20 mb-4">
               Strategic Locations
             </Badge>
@@ -71,12 +72,13 @@ export function LocationOverview() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative">
+            className="relative"
+          >
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
               <Image
-                width={100}
-                height={100}
-                src="/images/location.jpg"
+                height={500}
+                width={500}
+                src="/images/design/image-00062.png"
                 alt="Merit Real Estate Location"
                 className="w-full h-auto"
               />

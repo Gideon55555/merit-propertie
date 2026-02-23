@@ -7,7 +7,7 @@ export function AboutHero() {
   return (
     <section className="relative h-[70vh] flex items-center overflow-hidden">
       <Image
-        src="/images/about.png"
+        src="/images/design/image-00074.png"
         alt="About Merit"
         fill
         style={{ objectFit: "cover", objectPosition: "center" }}
@@ -26,7 +26,8 @@ export function AboutHero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}>
+            transition={{ duration: 0.6 }}
+          >
             <h1 className="text-5xl md:text-7xl font-primary text-white leading-tight mb-6">
               Our <span className="text-merit-gold">Story</span>
             </h1>
@@ -35,7 +36,8 @@ export function AboutHero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}>
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             <p className="text-xl md:text-2xl font-secondary text-white/90 mb-8 leading-relaxed">
               For over a decade, Merit Real Estate has been redefining
               excellence in the Ethiopian real estate landscape, creating spaces
