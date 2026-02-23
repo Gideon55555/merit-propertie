@@ -29,7 +29,7 @@ export default function GalleryPage() {
 
   return (
     <LenisWrapper>
-      <div className="flex flex-col min-h-screen bg-merit-beige">
+      <div className="flex flex-col min-h-screen bg-merit-gold/20">
         {/* Gallery Hero Section */}
         <section className="relative h-[60vh] flex items-center overflow-hidden">
           <Image
