@@ -98,8 +98,8 @@ export default function GalleryPage() {
               Inspired by Our <span className="text-merit-gold">Vision?</span>
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto mb-10 text-lg">
-              Let's discuss how we can bring this level of sophistication to
-              your next home.
+              Let&apos;s discuss how we can bring this level of sophistication
+              to your next home.
             </p>
             <a
               href="/contact"
