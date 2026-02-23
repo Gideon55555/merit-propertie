@@ -66,7 +66,7 @@ export default function GalleryPage() {
         <section className="py-20 container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 border-b border-merit-gold/20 pb-8">
             <div className="max-w-xl">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-merit-green mb-4 lowercase">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-merit-green mb-4">
                 Curated <span className="text-merit-gold">Portfolio</span>
               </h2>
               <p className="text-merit-gray text-lg">
