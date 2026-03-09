@@ -1,8 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 
 interface GalleryViewProps {
@@ -60,19 +58,15 @@ export default function GalleryView({ images }: GalleryViewProps) {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {images.map((src, index) => (
-          <motion.div
+          <div
             key={src}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.05 }}
             className="group relative cursor-pointer overflow-hidden rounded-xl shadow-lg bg-white"
             onClick={() => openLightbox(index)}
           >
             <div className="aspect-[4/3] relative">
-              <Image
+              <img
                 src={src}
                 alt={`Gallery image ${index + 1}`}
-                fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
@@ -83,64 +77,55 @@ export default function GalleryView({ images }: GalleryViewProps) {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
 
-      <AnimatePresence>
+      <div>
         {selectedImage !== null && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+          <div
             className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 md:p-10"
             onClick={closeLightbox}
           >
             <button
-              className="absolute top-6 right-6 text-white hover:text-merit-gold transition-colors z-[110]"
+              className="absolute top-6 right-6 text-white transition-colors z-[110]"
               onClick={closeLightbox}
             >
               <X size={32} />
             </button>
 
             <button
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-merit-gold transition-colors p-2 bg-white/10 rounded-full backdrop-blur-md z-[110]"
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white p-2 bg-white/10 rounded-full backdrop-blur-md z-[110]"
               onClick={prevImage}
             >
               <ChevronLeft size={40} />
             </button>
 
             <button
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-merit-gold transition-colors p-2 bg-white/10 rounded-full backdrop-blur-md z-[110]"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white p-2 bg-white/10 rounded-full backdrop-blur-md z-[110]"
               onClick={nextImage}
             >
               <ChevronRight size={40} />
             </button>
 
-            <motion.div
+            <div
               key={selectedImage}
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
               className="relative w-full h-full max-w-6xl max-h-[80vh] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
-              <Image
+              <img
                 src={images[selectedImage]}
                 alt={`Gallery image ${selectedImage + 1}`}
-                fill
                 className="object-contain"
-                priority
               />
-            </motion.div>
+            </div>
 
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white font-medium bg-white/10 px-6 py-2 rounded-full backdrop-blur-md border border-white/20">
               {selectedImage + 1} / {images.length}
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
+      </div>
     </>
   );
 }

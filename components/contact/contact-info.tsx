@@ -38,21 +38,21 @@ export function ContactInfo() {
       icon: Phone,
       title: "Call Us",
       details: [
-        "+251 911 249 183 - Main Office",
-        "+251 911 249 183 - Sales Inquiries",
+        "+251 938 727 272 - Call Center",
+        // "+251 911 249 183 - Sales Inquiries",
       ],
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@meritproperties.com", "sales@meritproperties.com"],
+      details: ["info@meritproperties.et", "sales@meritproperties.et"],
     },
     {
       icon: Clock,
       title: "Office Hours",
       details: [
-        "Monday - Friday: 9:00 AM - 6:00 PM",
-        "Saturday: 10:00 AM - 3:00 PM",
+        "Monday - Friday: 8:30 AM - 5:00 PM",
+        "Saturday: 8:30 AM - 12:00 PM",
         "Sunday: Closed",
       ],
     },
@@ -61,7 +61,7 @@ export function ContactInfo() {
   const socialLinks = [
     { icon: Facebook, label: "Facebook", href: "https://facebook.com" },
     { icon: Instagram, label: "Instagram", href: "https://instagram.com" },
-    { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
+    { icon: Twitter, label: "Tiktok", href: "https://twitter.com" },
     { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
   ];
 
@@ -72,7 +72,8 @@ export function ContactInfo() {
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="space-y-8">
+      className="space-y-8"
+    >
       <div className="bg-merit-green/50 backdrop-blur-sm rounded-lg border border-white/10 p-8 md:p-10">
         <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-gold/20 mb-4">
           Contact Information
@@ -121,11 +122,13 @@ export function ContactInfo() {
               variant="outline"
               size="lg"
               asChild
-              className="border-white/20 bg-transparent text-white/70 hover:text-white hover:bg-white/10">
+              className="border-white/20 bg-transparent text-white/70 hover:text-white hover:bg-white/10"
+            >
               <Link
                 href={social.href}
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <social.icon className="h-5 w-5 mr-2" />
                 {social.label}
               </Link>
