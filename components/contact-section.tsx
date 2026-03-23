@@ -6,7 +6,6 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, Building } from "lucide-react";
 import { contactDetails } from "@/data/contact-details";
 
 export function ContactSection() {

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
+import Image from "next/image";
 
 interface GalleryViewProps {
   images: string[];
@@ -64,10 +65,10 @@ export default function GalleryView({ images }: GalleryViewProps) {
             onClick={() => openLightbox(index)}
           >
             <div className="aspect-[4/3] relative">
-              <img
+              <Image
                 src={src}
                 alt={`Gallery image ${index + 1}`}
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
               />
@@ -113,9 +114,10 @@ export default function GalleryView({ images }: GalleryViewProps) {
               className="relative w-full h-full max-w-6xl max-h-[80vh] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
-              <img
+              <Image
                 src={images[selectedImage]}
                 alt={`Gallery image ${selectedImage + 1}`}
+                fill
                 className="object-contain"
               />
             </div>
