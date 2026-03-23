@@ -9,6 +9,8 @@ import { ContactSection } from "@/components/contact-section";
 import type { Metadata } from "next";
 import LenisWrapper from "@/components/LenisWrapper";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { DroneFootageSection } from "@/components/drone-footage-section";
+import { VirtualTourSection } from "@/components/virtual-tour-section";
 
 export const metadata: Metadata = {
   title:
@@ -24,10 +26,12 @@ export default function Home() {
         <HeroSection />
         <PrefaceSection />
         <RevolutionizingSection />
+        <DroneFootageSection />
         <ChampioningSection />
         <LocationSection />
         <AmenitiesSection />
         <ResidencesSection />
+        <VirtualTourSection />
         <ContactSection />
         <ScrollToTop />
       </LenisWrapper>
