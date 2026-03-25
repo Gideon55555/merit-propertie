@@ -133,7 +133,11 @@ export function ResidencesSection() {
   // const currentResidence = residences[activeTab as keyof typeof residences];
 
   return (
-    <section id="residences" className="merit-green-section py-12 md:py-20" ref={ref}>
+    <section
+      id="residences"
+      className="merit-green-section py-12 md:py-20"
+      ref={ref}
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-7xl md:text-9xl font-serif font-bold text-white opacity-20 leading-tight mb-8">
@@ -151,21 +155,25 @@ export function ResidencesSection() {
         <Tabs
           defaultValue="one-bedroom"
           className="w-full"
-          onValueChange={setActiveTab}>
+          onValueChange={setActiveTab}
+        >
           <TabsList className="grid w-full grid-cols-3 mb-8 p-2 h-auto bg-white/10 border-merit-gold/30">
             <TabsTrigger
               value="one-bedroom"
-              className="data-[state=active]:bg-merit-gold/10 data-[state=active]:text-merit-gold py-2 text-white/70">
+              className="data-[state=active]:bg-merit-gold/10 data-[state=active]:text-merit-gold py-2 text-white/70"
+            >
               One Bedroom
             </TabsTrigger>
             <TabsTrigger
               value="two-bedroom"
-              className="data-[state=active]:bg-merit-gold/10 data-[state=active]:text-merit-gold py-2 text-white/70">
+              className="data-[state=active]:bg-merit-gold/10 data-[state=active]:text-merit-gold py-2 text-white/70"
+            >
               Two Bedroom
             </TabsTrigger>
             <TabsTrigger
               value="three-bedroom"
-              className="data-[state=active]:bg-merit-gold/10 data-[state=active]:text-merit-gold py-2 text-white/70">
+              className="data-[state=active]:bg-merit-gold/10 data-[state=active]:text-merit-gold py-2 text-white/70"
+            >
               Three Bedroom
             </TabsTrigger>
           </TabsList>
@@ -175,7 +183,8 @@ export function ResidencesSection() {
               <motion.div
                 initial="hidden"
                 animate={isInView && activeTab === key ? "visible" : "hidden"}
-                variants={fadeIn}>
+                variants={fadeIn}
+              >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                   <div className="order-2 lg:order-1">
                     <div className="mb-6">
@@ -234,9 +243,9 @@ export function ResidencesSection() {
             </TabsContent>
           ))}
         </Tabs>
-        <div className="flex justify-end mt-6 w-full">
+        {/* <div className="flex justify-end mt-6 w-full">
           <ViewMore href="/properties">View More</ViewMore>
-        </div>
+        </div> */}
       </div>
     </section>
   );

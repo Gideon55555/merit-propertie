@@ -19,14 +19,14 @@ export const contactDetails = [
     icon: Phone,
     title: "Call Us",
     details: [
-      "+251 938 727 272 - Call Center",
-      // "+251 911 249 183 - Sales Inquiries",
+      "+251 911 975 548 - Sales Inquiries",
+      "+251 911 971 336 - Call Center",
     ],
   },
   {
     icon: Mail,
     title: "Email Us",
-    details: ["info@meritproperties.et", "sales@meritproperties.et"],
+    details: ["contact@meritproperties.et", "meritpropertiesplc@gmail.com"],
   },
   {
     icon: Clock,
