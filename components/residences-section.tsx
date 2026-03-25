@@ -36,14 +36,14 @@ export function ResidencesSection() {
       conclusion:
         "This unit is ideal for individuals or couples seeking an affordable yet sophisticated urban living experience, complete with modern technologies that enhance comfort and convenience.",
       specs: [
-        { name: "Net Area", value: "43 sqm" },
+        { name: "Net Area", value: "44 sqm" },
         { name: "Gross Area", value: "49 sqm" },
-        { name: "Living & Dining", value: "17 sqm" },
-        { name: "Open Kitchen", value: "" },
-        { name: "Bedroom", value: "11 sqm" },
-        { name: "Bathroom", value: "4 sqm" },
-        { name: "Balcony One", value: "1 sqm" },
-        { name: "Balcony Two", value: "2 sqm" },
+        { name: "Living & Dining", value: "14 sqm" },
+        { name: "Kitchen", value: "6 sqm" },
+        { name: "Bedroom", value: "12 sqm" },
+        { name: "Bathroom", value: "7 sqm" },
+        { name: "Balcony One", value: "2 sqm" },
+        { name: "Balcony Two", value: "3 sqm" },
       ],
       rooms: [
         { name: "BEDROOM", x: 60, y: 30 },
@@ -59,7 +59,7 @@ export function ResidencesSection() {
       subtitle: "Two Bedroom",
       image: "/images/two-bedroom.png",
       description:
-        "The two-bedroom unit at Merit Piassa Apartments, part of the Harmony Haven Collection, spans a generous 75 m², making it perfect for small families or roommates. Designed for practicality and contemporary living, it offers:",
+        "The two-bedroom unit at Merit Piassa Apartments, part of the Harmony Haven Collection, spans a generous 95 m², making it perfect for small families or roommates. Designed for practicality and contemporary living, it offers:",
       features: [
         "Two well-sized bedrooms with ample natural light and built-in wardrobes.",
         "Spacious living area for family time or entertaining.",
@@ -69,13 +69,16 @@ export function ResidencesSection() {
       conclusion:
         "These units combine affordability with modern amenities, providing a balance of space, comfort, and cutting-edge technology for a seamless living experience in a prime location.",
       specs: [
-        { name: "Net Area", value: "65 sqm" },
-        { name: "Gross Area", value: "75 sqm" },
-        { name: "Living & Dining + Open Kitchen", value: "29 sqm" },
-        { name: "Bedroom One", value: "11 sqm" },
-        { name: "Bedroom Two", value: "8 sqm" },
-        { name: "Bathroom", value: "4 sqm" },
-        { name: "Balcony One", value: "3 sqm" },
+        { name: "Net Area", value: "75 sqm" },
+        { name: "Gross Area", value: "95 sqm" },
+        { name: "Living & Dining", value: "24 sqm" },
+        { name: "Kitchen", value: "9 sqm" },
+        { name: "Master Bedroom One", value: "15 sqm" },
+        { name: "Master Bathroom", value: "6 sqm" },
+        { name: "Bedroom 1", value: "9 sqm" },
+        { name: "Common Bath", value: "6 sqm" },
+        { name: "Corridor", value: "3 sqm" },
+        { name: "Balcony", value: "3 sqm" },
       ],
       rooms: [
         { name: "BATHROOM", x: 60, y: 30 },
@@ -90,7 +93,7 @@ export function ResidencesSection() {
       subtitle: "Three Bedroom",
       image: "/images/three-bedroom.png",
       description:
-        "The three-bedroom unit at Merit Piassa Apartments, part of the Grand Vista Collection, offers a spacious 109 m² of luxury living. Perfect for families or those who desire extra space, this premium unit features:",
+        "The three-bedroom unit at Merit Piassa Apartments, part of the Grand Vista Collection, offers a spacious 130 m² of luxury living. Perfect for families or those who desire extra space, this premium unit features:",
       features: [
         "Master bedroom with en-suite bathroom and ample storage.",
         "Two additional well-proportioned bedrooms.",
@@ -101,17 +104,17 @@ export function ResidencesSection() {
       conclusion:
         "The Grand Vista Residences represent the pinnacle of urban living, offering spacious interiors, premium finishes, and thoughtful layouts that cater to the needs of modern families seeking comfort and luxury in a prime location.",
       specs: [
-        { name: "Net Area", value: "95 sqm" },
-        { name: "Gross Area", value: "109 sqm" },
-        { name: "Living & Dining", value: "24 sqm" },
-        { name: "Kitchen", value: "5 sqm" },
-        { name: "Master Bedroom", value: "13 sqm" },
-        { name: "Master Bathroom", value: "5 sqm" },
-        { name: "Bedroom One", value: "9 sqm" },
-        { name: "Bedroom Two", value: "9 sqm" },
-        { name: "Common Bathroom", value: "3 sqm" },
-        { name: "Maid's Room", value: "4 sqm" },
-        { name: "Balcony", value: "3 sqm" },
+        { name: "Net Area", value: "105 sqm" },
+        { name: "Gross Area", value: "130 sqm" },
+        { name: "Living & Dining", value: "29 sqm" },
+        { name: "Kitchen", value: "10 sqm" },
+        { name: "Balcony", value: "4 sqm" },
+        { name: "Master Bedroom", value: "17 sqm" },
+        { name: "Master Bathroom", value: "9 sqm" },
+        { name: "Bedroom One", value: "12 sqm" },
+        { name: "Bedroom Two", value: "11 sqm" },
+        { name: "Common Bathroom", value: "7 sqm" },
+        { name: "Maid's Room", value: "6 sqm" },
       ],
       rooms: [
         { name: "BEDROOM 1", x: 20, y: 30 },
