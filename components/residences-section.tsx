@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 // import { Button } from "@/components/ui/button";
 // import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { ViewMore } from "./view-more";
+// import { ViewMore } from "./view-more";
 
 export function ResidencesSection() {
   const ref = useRef(null);
