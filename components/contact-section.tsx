@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { contactDetails } from "@/data/contact-details";
+import { contactDetails, socialLinks } from "@/data/contact-details";
 
 export function ContactSection() {
   const ref = useRef(null);
@@ -129,14 +129,47 @@ export function ContactSection() {
                       <h4 className="font-sans font-bold text-white mb-1">
                         {item.title}
                       </h4>
-                      {item.details.map((detail, i) => (
-                        <p key={i} className="text-white/80 font-secondary">
-                          {detail}
-                        </p>
-                      ))}
+                      {item.details.map((detail, i) => {
+                        const isLink = typeof detail !== "string" && detail.href;
+                        const content = typeof detail === "string" ? detail : detail.text;
+                        
+                        return isLink ? (
+                          <a
+                            key={i}
+                            href={(detail as any).href}
+                            className="block text-white/80 font-secondary hover:text-merit-gold transition-colors"
+                            target={(detail as any).href.startsWith('http') ? "_blank" : undefined}
+                            rel={(detail as any).href.startsWith('http') ? "noopener noreferrer" : undefined}
+                          >
+                            {content}
+                          </a>
+                        ) : (
+                          <p key={i} className="text-white/80 font-secondary">
+                            {content}
+                          </p>
+                        );
+                      })}
                     </div>
                   </div>
                 ))}
+              </div>
+
+              <div className="mt-10 pt-8 border-t border-white/10">
+                <h4 className="font-sans font-bold text-white mb-4">Follow Us</h4>
+                <div className="flex flex-wrap gap-4">
+                  {socialLinks.map((social, index) => (
+                    <a
+                      key={index}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white/5 hover:bg-merit-gold/20 p-3 rounded-full transition-all group"
+                      title={social.label}
+                    >
+                      <social.icon className="h-5 w-5 text-white/70 group-hover:text-merit-gold transition-colors" />
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>

@@ -13,20 +13,38 @@ export const contactDetails = [
   {
     icon: MapPin,
     title: "Visit Us",
-    details: ["Piassa Ethio Ceramics Bldg, 2nd floor", "Addis Ababa, Ethiopia"],
+    details: [
+      {
+        text: "Piassa Ethio Ceramics Bldg, 2nd floor",
+        href: "https://maps.google.com/?q=Piassa+Ethio+Ceramics+Bldg,+Addis+Ababa",
+      },
+      {
+        text: "Addis Ababa, Ethiopia",
+        href: "https://maps.google.com/?q=Piassa+Ethio+Ceramics+Bldg,+Addis+Ababa",
+      },
+    ],
   },
   {
     icon: Phone,
     title: "Call Us",
     details: [
-      "+251 911 975 548 - Sales Inquiries",
-      "+251 911 971 336 - Call Center",
+      { text: "+251 911 975 548 - Sales Inquiries", href: "tel:+251911975548" },
+      { text: "+251 911 971 336 - Call Center", href: "tel:+251911971336" },
     ],
   },
   {
     icon: Mail,
     title: "Email Us",
-    details: ["contact@meritproperties.et", "meritpropertiesplc@gmail.com"],
+    details: [
+      {
+        text: "contact@meritproperties.et",
+        href: "mailto:contact@meritproperties.et",
+      },
+      {
+        text: "meritpropertiesplc@gmail.com",
+        href: "mailto:meritpropertiesplc@gmail.com",
+      },
+    ],
   },
   {
     icon: Clock,
@@ -40,8 +58,8 @@ export const contactDetails = [
 ];
 
 export const socialLinks = [
-  { icon: Facebook, label: "Facebook", href: "https://facebook.com" },
-  { icon: Instagram, label: "Instagram", href: "https://instagram.com" },
-  { icon: Twitter, label: "Tiktok", href: "https://twitter.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+  { icon: Facebook, label: "Facebook", href: "https://facebook.com/meritproperties" },
+  { icon: Instagram, label: "Instagram", href: "https://instagram.com/meritproperties" },
+  { icon: Twitter, label: "Twitter", href: "https://twitter.com/meritproperties" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/company/meritproperties" },
 ];

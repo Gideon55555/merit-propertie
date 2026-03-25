@@ -43,11 +43,26 @@ export function ContactInfo() {
                 <h3 className="font-sans text-white text-lg mb-2">
                   {item.title}
                 </h3>
-                {item.details.map((detail, i) => (
-                  <p key={i} className="text-white/80 font-secondary">
-                    {detail}
-                  </p>
-                ))}
+                {item.details.map((detail, i) => {
+                  const isLink = typeof detail !== "string" && detail.href;
+                  const content = typeof detail === "string" ? detail : detail.text;
+                  
+                  return isLink ? (
+                    <a
+                      key={i}
+                      href={(detail as any).href}
+                      className="block text-white/80 font-secondary hover:text-merit-gold transition-colors"
+                      target={(detail as any).href.startsWith('http') ? "_blank" : undefined}
+                      rel={(detail as any).href.startsWith('http') ? "noopener noreferrer" : undefined}
+                    >
+                      {content}
+                    </a>
+                  ) : (
+                    <p key={i} className="text-white/80 font-secondary">
+                      {content}
+                    </p>
+                  );
+                })}
               </div>
             </div>
           ))}
