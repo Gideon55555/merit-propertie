@@ -219,7 +219,7 @@ export function VirtualTourSection() {
               </div>
 
               {/* Floating Badge */}
-              <div className="absolute -bottom-6 right-8 bg-merit-green text-white p-6 rounded-2xl shadow-2xl flex items-center gap-4 z-20 group-hover:-translate-y-2 transition-transform duration-500">
+              {/* <div className="absolute -bottom-6 right-8 bg-merit-green text-white p-6 rounded-2xl shadow-2xl flex items-center gap-4 z-20 group-hover:-translate-y-2 transition-transform duration-500">
                 <div className="p-3 bg-merit-gold/20 rounded-full">
                   <svg
                     className="w-8 h-8 text-merit-gold"
@@ -243,7 +243,7 @@ export function VirtualTourSection() {
                     Virtual Tour
                   </p>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>

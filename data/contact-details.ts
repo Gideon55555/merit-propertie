@@ -3,13 +3,31 @@ import {
   Facebook,
   Instagram,
   Linkedin,
+  LucideIcon,
   Mail,
   MapPin,
   Phone,
   Twitter,
 } from "lucide-react";
 
-export const contactDetails = [
+export interface ContactDetailItem {
+  text: string;
+  href?: string;
+}
+
+export interface ContactDetail {
+  icon: LucideIcon;
+  title: string;
+  details: (string | ContactDetailItem)[];
+}
+
+export interface SocialLink {
+  icon: LucideIcon;
+  label: string;
+  href: string;
+}
+
+export const contactDetails: ContactDetail[] = [
   {
     icon: MapPin,
     title: "Visit Us",
@@ -57,7 +75,7 @@ export const contactDetails = [
   },
 ];
 
-export const socialLinks = [
+export const socialLinks: SocialLink[] = [
   { icon: Facebook, label: "Facebook", href: "https://facebook.com/meritproperties" },
   { icon: Instagram, label: "Instagram", href: "https://instagram.com/meritproperties" },
   { icon: Twitter, label: "Twitter", href: "https://twitter.com/meritproperties" },

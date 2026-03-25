@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { contactDetails, socialLinks } from "@/data/contact-details";
+import { contactDetails, socialLinks, type ContactDetailItem } from "@/data/contact-details";
 
 export function ContactInfo() {
   const ref = useRef(null);
@@ -44,22 +44,31 @@ export function ContactInfo() {
                   {item.title}
                 </h3>
                 {item.details.map((detail, i) => {
-                  const isLink = typeof detail !== "string" && detail.href;
-                  const content = typeof detail === "string" ? detail : detail.text;
-                  
-                  return isLink ? (
-                    <a
-                      key={i}
-                      href={(detail as any).href}
-                      className="block text-white/80 font-secondary hover:text-merit-gold transition-colors"
-                      target={(detail as any).href.startsWith('http') ? "_blank" : undefined}
-                      rel={(detail as any).href.startsWith('http') ? "noopener noreferrer" : undefined}
-                    >
-                      {content}
-                    </a>
-                  ) : (
+                  if (typeof detail !== "string") {
+                    const detailItem = detail as ContactDetailItem;
+                    if (detailItem.href) {
+                      return (
+                        <a
+                          key={i}
+                          href={detailItem.href}
+                          className="block text-white/80 font-secondary hover:text-merit-gold transition-colors"
+                          target={detailItem.href.startsWith("http") ? "_blank" : undefined}
+                          rel={detailItem.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                        >
+                          {detailItem.text}
+                        </a>
+                      );
+                    }
+                    return (
+                      <p key={i} className="text-white/80 font-secondary">
+                        {detailItem.text}
+                      </p>
+                    );
+                  }
+
+                  return (
                     <p key={i} className="text-white/80 font-secondary">
-                      {content}
+                      {detail}
                     </p>
                   );
                 })}
