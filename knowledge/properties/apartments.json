@@ -1,44 +1,76 @@
-[
-  {
-    "id": "prop-piassa-1br",
-    "category": "properties",
-    "tags": ["one bedroom", "1 bedroom", "piassa", "urban comfort", "49 sqm", "studio"],
-    "title": "Urban Comfort Series - 1 Bedroom Apartment",
-    "content": "Located at Merit Piassa Apartments near Friendship Park, the Urban Comfort Series 1-Bedroom unit offers a compact, highly functional 49 m² gross area (44 m² net usable area). The exact layout dimensions are: Living & Dining (14 sqm), Kitchen (6 sqm), Bedroom (12 sqm), Bathroom (7 sqm), Balcony One (2 sqm), and Balcony Two (3 sqm). It features a comfortable bedroom with built-in storage, a cozy living area, a modern kitchen with energy-efficient appliances, and premium bathroom fittings. It is ideal for individuals or couples seeking an affordable yet sophisticated urban experience.",
-    "metadata": {
+{
+  "page": "properties",
+  "title": "Available Properties",
+"business": "Merit Properties",
+
+  "location": "Addis Ababa, Ethiopia",
+
+  "summary": "Merit Properties offers residential apartments in Piassa , Addis Ababa. Listings include 1, 2, and 3 bedroom apartments and commercial units.",
+
+  "locations": [
+    {
+      "name": "Piassa",
+      "type": "Residential Apartments",
+      "description": "Prime central Addis Ababa location with convenient access to major destinations including Friendship Park, Unity Park, Meskel Square, shopping areas, and transport connections."
+    }
+  ],
+
+  "residential_properties": [
+    {
+      "name": "Piassa 1 Bedroom Apartment",
+      "location": "Piassa, Addis Ababa",
+      "type": "Apartment",
       "bedrooms": 1,
-      "location": "Piassa",
-      "series": "Urban Comfort",
-      "grossArea": 49,
-      "netArea": 44
-    }
-  },
-  {
-    "id": "prop-piassa-2br",
-    "category": "properties",
-    "tags": ["two bedroom", "2 bedroom", "piassa", "harmony haven", "harmony heaven", "95 sqm"],
-    "title": "Harmony Haven Collection - 2 Bedroom Apartment",
-    "content": "The Harmony Haven Collection (also referred to as Harmony Heaven) 2-Bedroom unit at Merit Piassa Apartments spans a generous 95 m² gross area (75 m² net usable area), perfect for small families or roommates. The precise structural floor plan includes: Living & Dining (24 sqm), Kitchen (9 sqm), Master Bedroom One (15 sqm), Master Bathroom (6 sqm), Bedroom One (9 sqm), Common Bath (6 sqm), Corridor (3 sqm), and a Private Balcony (3 sqm). Features include ample natural light, built-in wardrobes, a modern kitchen with durable finishes, and contemporary home technologies.",
-    "metadata": {
+      "bathrooms": 1,
+      "gross_area": "49 sqm",
+      "net_area": "43 sqm",
+      "collection": "Urban Comfort Series",
+      "features": [
+        "Open kitchen",
+        "Living and dining area",
+        "Built-in storage",
+        "Two balconies"
+      ],
+      "availability": "Contact for availability and floor options",
+      "details_page": "property-piyassa-1br.html"
+    },
+
+    {
+      "name": "Piassa 2 Bedroom Apartment",
+      "location": "Piassa, Addis Ababa",
+      "type": "Apartment",
       "bedrooms": 2,
-      "location": "Piassa",
-      "series": "Harmony Haven",
-      "grossArea": 95,
-      "netArea": 75
-    }
-  },
-  {
-    "id": "prop-piassa-3br",
-    "category": "properties",
-    "tags": ["three bedroom", "3 bedroom", "piassa", "grand vista", "130 sqm", "maid's room"],
-    "title": "Grand Vista Collection - 3 Bedroom Luxury Apartment",
-    "content": "The Grand Vista Collection 3-Bedroom unit represents the pinnacle of premium urban luxury at Merit Piassa Apartments, offering a spacious 130 m² gross area (105 m² net usable area). This layout is optimized for larger families and includes a dedicated maid's room. Dimensions are: Living & Dining (29 sqm), Kitchen (10 sqm), Private Balcony (4 sqm), Master Bedroom (17 sqm), Master Bathroom (9 sqm), Bedroom One (12 sqm), Bedroom Two (11 sqm), Common Bathroom (7 sqm), and Maid's Room (6 sqm). Features include an en-suite master bathroom, premium finishes, and large open living spaces for entertaining.",
-    "metadata": {
+      "bathrooms": 1,
+      "gross_area": "95 sqm",
+      "net_area": "75 sqm",
+      "collection": "Harmony Haven Collection",
+      "features": [
+        "Living and dining area",
+        "Open kitchen",
+        "Built-in wardrobes",
+        "Balcony"
+      ],
+      "availability": "Contact for availability and floor options",
+      "details_page": "property-piyassa-2br.html"
+    },
+
+    {
+      "name": "Piassa 3 Bedroom Apartment",
+      "location": "Piassa, Addis Ababa",
+      "type": "Apartment",
       "bedrooms": 3,
-      "location": "Piassa",
-      "series": "Grand Vista",
-      "grossArea": 130,
-      "netArea": 105
+      "bathrooms": 2,
+      "gross_area": "130 sqm including parking",
+      "net_area": "105 sqm",
+      "collection": "Grand Vista Collection",
+      "features": [
+        "Master en-suite bedroom",
+        "Separate kitchen",
+        "Maid's room",
+        "Balcony",
+        "Parking included"
+      ],
+      "availability": "Contact for availability and floor options",
+      "details_page": "property-piyassa-3br.html"
     }
-  }
-]
+  ]}
