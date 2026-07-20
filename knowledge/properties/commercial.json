@@ -1,0 +1,35 @@
+[
+  {
+    "id": "prop-comm-lower-levels",
+    "category": "properties",
+    "tags": ["commercial", "shops", "retail", "sb", "lg", "ug", "semi-basement", "lower ground", "upper ground", "road access", "corridor access"],
+    "title": "Merit Commercial Center - Lower Levels Shop Inventory (SB, LG, UG)",
+    "content": "Comprehensive shop listings for the lower tiers of the Merit Commercial Center in Piassa. Semi-Basement (SB) options include 11 shops of 22 m² with direct road access and 16 shops of 32 m² with corridor access. Lower Ground (LG) options feature Road Access (18 shops of 22 m², 2 shops of 16 m², 8 shops of 11 m²) and Corridor Access (15 shops of 32 m², 17 shops of 16 m², 14 shops of 11 m²). Upper Ground (UG) options feature Road Access (17 shops of 22 m², 2 shops of 16 m², 8 shops of 11 m², 19 shops of 16 m², 14 shops of 11 m²) and Corridor Access (22 shops of 32 m²).",
+    "metadata": {
+      "floors": ["SB", "LG", "UG"],
+      "totalAvailableSizes": [11, 16, 22, 32]
+    }
+  },
+  {
+    "id": "prop-comm-upper-floors",
+    "category": "properties",
+    "tags": ["commercial", "office", "retail", "floor 1", "floor 2", "floor 3", "road access", "corridor access", "shop sizes"],
+    "title": "Merit Commercial Center - Upper Levels Shop Inventory (Floors 1-3)",
+    "content": "Detailed commercial shop availability across the upper floors of the Merit Piassa development. Floor 1 options feature Road Access (20 shops of 22 m², 2 shops of 16 m², 8 shops of 11 m²) and Corridor Access (22 shops of 32 m², 18 shops of 16 m², 14 shops of 11 m²). Floor 2 options feature Road Access (18 shops of 22 m², 8 shops of 11 m², 2 shops of 16 m²) and Corridor Access (22 shops of 32 m², 18 shops of 16 m², 14 shops of 11 m²). Floor 3 options feature Road Access (18 shops of 22 m², 2 shops of 16 m², 8 shops of 11 m²) and Corridor Access (16 shops of 32 m², 18 shops of 16 m², 14 shops of 11 m²).",
+    "metadata": {
+      "floors": ["Floor 1", "Floor 2", "Floor 3"],
+      "standardSizes": [11, 16, 22, 32]
+    }
+  },
+  {
+    "id": "prop-comm-construction-log",
+    "category": "properties",
+    "tags": ["construction updates", "piassa site", "progress", "timeline", "march 2026", "aerial", "status"],
+    "title": "Piassa Site Construction Progress Updates",
+    "content": "Official on-site structural progress logs for the Merit Piassa build. The latest milestone update recorded on March 11, 2026, details three distinct validation vectors: 1. Main Structural Progress footage tracking framework advancement on the core blocks. 2. Site Movement metrics capturing structural development and street-level access from surrounding blocks. 3. Wide Aerial Overviews detailing site mapping and neighborhood integration.",
+    "metadata": {
+      "lastUpdate": "2026-03-11",
+      "status": "Structural Progress"
+    }
+  }
+]

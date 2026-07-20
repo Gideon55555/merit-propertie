@@ -1,0 +1,61 @@
+[
+  {
+    "id": "gallery-render-1br",
+    "category": "gallery",
+    "tags": ["image", "photo", "render", "1 bedroom", "studio", "urban comfort", "interior"],
+    "title": "Urban Comfort Series - 1 Bedroom Studio Render",
+    "content": "Official high-resolution interior visual render and 360 virtual tour asset for the 1 Bedroom Studio (49 sqm) apartment layout within the Urban Comfort Series. Shows spatial flow, premium furniture configurations, compact kitchen finishes, and living area design.",
+    "metadata": {
+      "assetPath": "/assets/gallery/urban-comfort-1br.jpg",
+      "type": "Render",
+      "series": "Urban Comfort"
+    }
+  },
+  {
+    "id": "gallery-render-2br",
+    "category": "gallery",
+    "tags": ["image", "photo", "render", "2 bedroom", "heritage", "harmony haven", "interior"],
+    "title": "Harmony Haven Collection - 2 Bedroom Heritage Render",
+    "content": "Official interior architectural visualization and photography asset for the 2 Bedroom Heritage (75/95 sqm) residence in the Harmony Haven Collection. Displays the spacious living room layout, master bedroom daylight exposure, and contemporary finishes.",
+    "metadata": {
+      "assetPath": "/assets/gallery/harmony-haven-2br.jpg",
+      "type": "Render",
+      "series": "Harmony Haven"
+    }
+  },
+  {
+    "id": "gallery-render-3br",
+    "category": "gallery",
+    "tags": ["image", "photo", "render", "3 bedroom", "vista", "grand vista", "interior"],
+    "title": "Grand Vista Collection - 3 Bedroom Vista Luxury Render",
+    "content": "Premium interior design image and 360 spatial tour map showcasing the 3 Bedroom Vista (109/130 sqm) apartment layout in the Grand Vista Collection. Features the expansive dining area, en-suite luxury master bathroom layout, and maid's quarters.",
+    "metadata": {
+      "assetPath": "/assets/gallery/grand-vista-3br.jpg",
+      "type": "Render",
+      "series": "Grand Vista"
+    }
+  },
+  {
+    "id": "gallery-exterior-aerial",
+    "category": "gallery",
+    "tags": ["image", "photo", "exterior", "architecture", "aerial", "building", "piassa"],
+    "title": "Merit Piassa Building Aerial Exterior View",
+    "content": "External architectural photography and drone view of the Merit Real Estate properties landmark skyline profile in Piassa, Addis Ababa. Showcases the premium structural build quality, strategic road accessibility, and modern facade standard from above.",
+    "metadata": {
+      "assetPath": "/assets/gallery/building-exterior.jpg",
+      "type": "Exterior",
+      "location": "Piassa"
+    }
+  },
+  {
+    "id": "gallery-amenity-spa-pool",
+    "category": "gallery",
+    "tags": ["image", "photo", "amenities", "spa", "swimming pool", "fitness", "gym"],
+    "title": "Premium Operational Amenities Gallery Asset",
+    "content": "High-quality lifestyle and facilities images capturing the active residential communal spaces, including the temperature-controlled resort-style swimming pool, ambient-lit luxury spa sanctuary rooms, and the state-of-the-art fitness center gym setup.",
+    "metadata": {
+      "assetPath": "/assets/gallery/amenities-pool-gym.jpg",
+      "type": "Amenity"
+    }
+  }
+]

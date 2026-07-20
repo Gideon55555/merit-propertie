@@ -1,0 +1,92 @@
+[
+  {
+    "id": "amenity-residential-spa",
+    "category": "amenities",
+    "tags": ["spa", "sauna", "jacuzzi", "massage", "wellness"],
+    "title": "Residential SPA and Wellness Retreat",
+    "content": "The Residential SPA offers a peaceful wellness retreat inside the property. It features a luxurious sauna built with natural stone elements, a rejuvenating temperature-controlled jacuzzi space, a dedicated relaxation lounge with ambient lighting, private professional massage and treatment rooms, and active aromatherapy with essential oil diffusers to refresh your spirit.",
+    "metadata": {
+      "type": "Wellness"
+    }
+  },
+  {
+    "id": "amenity-resort-pool",
+    "category": "amenities",
+    "tags": ["pool", "swimming pool", "wading pool", "cabanas", "lifeguard"],
+    "title": "Resort-Style Swimming Pool Facilities",
+    "content": "Our stunning resort-style pool area offers a pristine private oasis with crystal-clear waters. The facility features a temperature-controlled swimming pool, a separate safe wading pool for children, luxurious poolside cabanas and loungers, integrated underwater lighting systems configured for evening swims, and a professional lifeguard on duty during peak operational hours.",
+    "metadata": {
+      "type": "Recreation"
+    }
+  },
+  {
+    "id": "amenity-fitness-center",
+    "category": "amenities",
+    "tags": ["gym", "fitness center", "cardio", "yoga", "personal trainers"],
+    "title": "State-of-the-Art Fitness Center",
+    "content": "Supporting active living, our comprehensive fitness center is fully equipped with premium cardio and strength training equipment. It features a dedicated yoga and stretching area, personal training services with professional fitness trainers, 24/7 secure access for all residents, and a regular schedule of physical fitness classes and wellness programs.",
+    "metadata": {
+      "type": "Health"
+    }
+  },
+  {
+    "id": "amenity-onsite-grocery",
+    "category": "amenities",
+    "tags": ["grocery", "essentials", "shopping", "store", "home delivery"],
+    "title": "On-Site Grocery and Essentials Market",
+    "content": "Eliminating last-minute travel stress, our on-site grocery store provides extreme convenience right at your doorstep. It features fresh produce delivered daily, essential household items, gourmet and specialty products, extended daily operating hours, and an exclusive home delivery service for property residents.",
+    "metadata": {
+      "type": "Convenience"
+    }
+  },
+  {
+    "id": "amenity-property-management",
+    "category": "amenities",
+    "tags": ["property management", "maintenance", "concierge", "online portal"],
+    "title": "Professional Property Management Services",
+    "content": "Our professional, dedicated property management team ensures a seamless, worry-free living experience. The service includes a 24/7 responsive management team, a dedicated online portal for tracking maintenance and service requests, regular proactive property maintenance and inspections, community event planning and coordination, and general concierge services.",
+    "metadata": {
+      "type": "Operations"
+    }
+  },
+  {
+    "id": "amenity-designer-lobby",
+    "category": "amenities",
+    "tags": ["lobby", "concierge", "waiting area", "package storage", "reception"],
+    "title": "Designer Welcome Lobby and Concierge",
+    "content": "Designed to make a grand entrance every day, our beautifully structured designer lobby sets a luxury tone with striking architectural elements and premium finishes. It features a 24-hour active concierge service, comfortable waiting lounges for guests, secure package receiving and storage lockers, and a fully climate-controlled environment.",
+    "metadata": {
+      "type": "Infrastructure"
+    }
+  },
+  {
+    "id": "amenity-power-solutions",
+    "category": "amenities",
+    "tags": ["power", "backup generator", "solar power", "ev charging", "energy"],
+    "title": "Uninterrupted Power and Energy Solutions",
+    "content": "Ensuring modern comfort is never compromised, our properties feature robust, sustainable power systems. The setup includes automatic heavy-duty backup generator systems, integrated solar power systems, smart energy management infrastructure, specialized EV (electric vehicle) charging stations, and energy-efficient appliances integrated across buildings.",
+    "metadata": {
+      "type": "Utility"
+    }
+  },
+  {
+    "id": "amenity-parking-facilities",
+    "category": "amenities",
+    "tags": ["parking", "assigned spaces", "visitor parking", "ev charging"],
+    "title": "Secure and Convenient Parking Facilities",
+    "content": "Our thoughtfully mapped parking infrastructure eliminates parking worries for residents and guests alike. Features include assigned resident parking spaces, easily accessible visitor parking zones, continuous 24/7 active security monitoring, bright lighting, high-volume ventilation systems, and electric vehicle (EV) charging stations.",
+    "metadata": {
+      "type": "Infrastructure"
+    }
+  },
+  {
+    "id": "amenity-comprehensive-security",
+    "category": "amenities",
+    "tags": ["security", "surveillance", "access control", "intercom", "guards"],
+    "title": "Multi-Layered Comprehensive Security Systems",
+    "content": "Resident safety is our highest priority. Our advanced, multi-layered security protocols feature trained 24/7 security personnel on site, advanced CCTV surveillance networks covering all public areas, strict secure access control points, intercom systems for screening incoming visitors, and rapid emergency response protocols.",
+    "metadata": {
+      "type": "Security"
+    }
+  }
+]

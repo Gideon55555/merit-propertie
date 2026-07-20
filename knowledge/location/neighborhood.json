@@ -1,0 +1,35 @@
+[
+  {
+    "id": "loc-strategic-overview",
+    "category": "location",
+    "tags": ["prime location", "addis ababa", "connectivity", "real estate market", "appreciation"],
+    "title": "Strategic Neighborhood and Location Profile",
+    "content": "Merit Real Estate projects are meticulously developed within the most sought-after, premium central neighborhoods of Addis Ababa. These locations are specifically handpicked to balance vibrant urban accessibility with a peaceful, tranquil environment. Proximity to business districts, embassies, high-grade schools, healthcare facilities, and transport nodes guarantees high returns and strong real estate value appreciation over time.",
+    "metadata": {}
+  },
+  {
+    "id": "loc-transit-proximity",
+    "category": "location",
+    "tags": ["travel times", "airport", "light rail", "shopping", "proximity", "distances"],
+    "title": "Nearby Destinations and Transit Proximity Matrix",
+    "content": "Our developments offer world-class connectivity to the capital's essential nodes. Commute times are highly efficient: Restaurants & Cafés are 2-5 minutes away; Bus Stations are 2-5 minutes away; Shopping Centers and modern malls are 5-10 minutes away; Healthcare Facilities and hospitals are 5-10 minutes away; Light Rail Transit lines are 5-10 minutes away; Major Highways are 5-10 minutes away; Educational Institutions are 10-15 minutes away; Parks & Recreational areas (including Friendship Park) are 5-15 minutes away; Prime Business Districts are 10-20 minutes away; and Bole International Airport is a short 15-20 minute drive away.",
+    "metadata": {
+      "airportDriveMin": 15,
+      "lightRailWalkMin": 5,
+      "shoppingDriveMin": 5
+    }
+  },
+  {
+    "id": "loc-map-coordinates",
+    "category": "location",
+    "tags": ["coordinates", "latitude", "longitude", "headquarters", "harmony heights", "business center", "urban village"],
+    "title": "Geographic Coordinate Registry for Map Integration",
+    "content": "For interactive mapping, navigation, and map engine rendering, here are the official coordinate markers for Merit Real Estate establishments across the city: 1. Merit Headquarters (Office & Mixed-Use) is situated at Piassa Ethio Ceramics Bldg, 2nd floor, at Latitude: 9.0222, Longitude: 38.7468. 2. Harmony Heights (Residential) is mapped at Latitude: 9.0300, Longitude: 38.7600. 3. Merit Business Center (Commercial) is tracked at Latitude: 9.0150, Longitude: 38.7350. 4. Urban Village (Residential & Mixed-Use) is located at Latitude: 9.0350, Longitude: 38.7250.",
+    "metadata": {
+      "headquarters": { "lat": 9.0222, "lng": 38.7468, "type": "Office" },
+      "harmonyHeights": { "lat": 9.0300, "lng": 38.7600, "type": "Residential" },
+      "meritBusinessCenter": { "lat": 9.0150, "lng": 38.7350, "type": "Commercial" },
+      "urbanVillage": { "lat": 9.0350, "lng": 38.7250, "type": "Mixed-Use" }
+    }
+  }
+]

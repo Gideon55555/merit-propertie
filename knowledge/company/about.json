@@ -1,0 +1,41 @@
+[
+  {
+    "id": "comp-history-profile",
+    "category": "company",
+    "tags": ["merit real estate", "history", "about us", "founded 2013", "preface"],
+    "title": "Merit Real Estate Company Profile and History",
+    "content": "Founded in 2013, Merit Real Estate has been a highly trusted developer in the Ethiopian real estate landscape for over a decade. The company specializes in delivering residential, commercial, and mixed-use projects across Addis Ababa and beyond. Built on a foundation of quality construction, innovative design, strategic prime locations, and competitive pricing, Merit focuses on building sustainable, customer-centric communities that excel in architectural mastery.",
+    "metadata": {
+      "foundedYear": 2013
+    }
+  },
+  {
+    "id": "comp-core-values",
+    "category": "company",
+    "tags": ["core values", "principles", "excellence", "passion", "innovation", "sustainability"],
+    "title": "Merit Real Estate Core Corporate Values",
+    "content": "Merit Real Estate operations are strictly driven by six core principles: 1. Excellence (pursuing top standards in construction and customer service), 2. Passion (going above and beyond to build exceptional environments), 3. Innovation (embracing modern technologies and forward-thinking design), 4. Community (creating spaces where people belong), 5. Integrity (maintaining absolute transparency and honesty), and 6. Sustainability (minimizing environmental impacts to create healthier living spaces).",
+    "metadata": {}
+  },
+  {
+    "id": "comp-impact-metrics",
+    "category": "company",
+    "tags": ["merit by the numbers", "statistics", "completed projects", "square meters built", "awards"],
+    "title": "Merit Real Estate Performance Metrics",
+    "content": "Over our operational history, Merit Real Estate has achieved major industry milestones including: 15+ complex projects completed across residential, commercial, and mixed-use developments; 1,200+ happy clients who trust the firm with their real estate needs; 500,000+ square meters built of premium living and working spaces; and 12+ notable industry awards recognizing our commitment to execution excellence.",
+    "metadata": {
+      "projectsCompleted": 15,
+      "clientsCount": 1200,
+      "sqmBuilt": 500000,
+      "awardsWon": 12
+    }
+  },
+  {
+    "id": "comp-testimonials",
+    "category": "company",
+    "tags": ["testimonials", "reviews", "abebe kebede", "sara haile", "daniel mekonnen"],
+    "title": "Verified Client Testimonials",
+    "content": "Our clients highlight the Merit difference across several domains: Abebe Kebede (Homeowner at Harmony Heights) states that their attention to detail and commitment to quality was evident from consultation to final handover. Sara Haile (Business Owner at Merit Business Center) reports that the commercial space significantly enhanced their brand image and customer experience. Daniel Mekonnen (Real Estate Investor) highlights that investing in multiple Merit properties has consistently provided exceptional financial returns due to strategic locations.",
+    "metadata": {}
+  }
+]
