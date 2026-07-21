@@ -1,9 +1,6 @@
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 
-export async function askOpenRouter(
-  systemPrompt: string,
-  userMessage: string
-) {
+export async function askOpenRouter(systemPrompt: string, userMessage: string) {
   const response = await fetch(OPENROUTER_URL, {
     method: "POST",
     headers: {
@@ -25,11 +22,11 @@ export async function askOpenRouter(
     }),
   });
 
-  if (!response.ok) {
-    throw new Error(`OpenRouter Error: ${response.status}`);
+  const rawData = await response.text();
+  try {
+    const data = JSON.parse(rawData);
+    return data.choices[0].message.content;
+  } catch (error) {
+    throw new Error(`Failed to parse OpenRouter response: ${rawData}`);
   }
-
-  const data = await response.json();
-
-  return data.choices[0].message.content;
 }

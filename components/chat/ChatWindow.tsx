@@ -1,13 +1,10 @@
 "use client";
 
-
 import { useEffect, useRef } from "react";
 import ChatMessage from "./ChatMessage";
 import ChatInput from "./ChatInput";
 
-
 interface Props {
-
   messages: {
     role: "assistant" | "user";
     message: string;
@@ -16,38 +13,19 @@ interface Props {
   sendMessage: (text: string) => void;
 
   isTyping: boolean;
-
 }
 
-
-
-export default function ChatWindow({
-
-  messages,
-  sendMessage,
-  isTyping
-
-}: Props) {
-
-
+export default function ChatWindow({ messages, sendMessage, isTyping }: Props) {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-
-
   useEffect(() => {
-
     messagesEndRef.current?.scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
-
   }, [messages, isTyping]);
 
-
-
   return (
-
     <div
-
       className="
       fixed
       bottom-24
@@ -62,37 +40,26 @@ export default function ChatWindow({
       flex-col
       z-40
       "
-
-      onWheel={(e)=>e.stopPropagation()}
-
+      onWheel={(e) => e.stopPropagation()}
     >
-
-
       {/* Header */}
 
-      <div
-
+      <h1
         className="
         bg-[#1F5E58]
         text-white
         px-5
         py-4
         font-semibold
+        font-sans
         "
-
       >
-
         Merit AI Assistant
-
-      </div>
-
-
-
+      </h1>
 
       {/* Messages */}
 
       <div
-
         className="
         flex-1
         p-4
@@ -100,36 +67,15 @@ export default function ChatWindow({
         overscroll-contain
         bg-[#F8F6F2]
         "
-
       >
+        {messages.map((msg, index) => (
+          <ChatMessage key={index} role={msg.role} message={msg.message} />
+        ))}
 
-
-        {
-          messages.map((msg,index)=>(
-
-            <ChatMessage
-
-              key={index}
-
-              role={msg.role}
-
-              message={msg.message}
-
-            />
-
-          ))
-        }
-
-
-
-        {
-          isTyping && (
-
-            <div className="flex justify-start mb-3">
-
-              <div
-
-                className="
+        {isTyping && (
+          <div className="flex justify-start mb-3">
+            <p
+              className="
                 bg-white
                 px-4
                 py-3
@@ -138,44 +84,19 @@ export default function ChatWindow({
                 text-sm
                 text-gray-500
                 "
+            >
+              Merit AI is typing
+              <span className="animate-pulse">...</span>
+            </p>
+          </div>
+        )}
 
-              >
-
-                Merit AI is typing
-
-                <span className="animate-pulse">
-                  ...
-                </span>
-
-
-              </div>
-
-            </div>
-
-          )
-        }
-
-
-
-        <div ref={messagesEndRef}/>
-
-
+        <div ref={messagesEndRef} />
       </div>
-
-
-
-
 
       {/* Input */}
 
-      <ChatInput
-        sendMessage={sendMessage}
-      />
-
-
-
+      <ChatInput sendMessage={sendMessage} />
     </div>
-
   );
-
 }

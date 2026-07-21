@@ -22,36 +22,53 @@ export default function CTA() {
           <span className="text-merit-gold">Heart of Teklehaymanot</span>
         </h2>
         <p className="text-white/75 font-light text-xs md:text-sm max-w-lg mx-auto leading-relaxed pt-1">
-          Secure your premium retail or office space today. Schedule a private site layout walkthrough or download our comprehensive technical blueprint catalog.
+          Secure your premium retail or office space today. Schedule a private
+          site layout walkthrough or download our comprehensive technical
+          blueprint catalog.
         </p>
       </div>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto z-10 pt-2">
         {/* Tour Booking Link */}
-        <Link 
+        <Link
           href="#contact"
           className="w-full sm:w-auto px-6 py-3 bg-merit-gold hover:bg-merit-gold/90 text-black font-medium text-xs rounded transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2 group/btn cursor-pointer font-secondary no-underline"
         >
           <span>Schedule a Commercial Tour</span>
-          <svg 
-            className="w-3.5 h-3.5 transform transition-transform duration-300 group-hover/btn:translate-x-1" 
-            fill="none" 
-            stroke="currentColor" 
+          <svg
+            className="w-3.5 h-3.5 transform transition-transform duration-300 group-hover/btn:translate-x-1"
+            fill="none"
+            stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            />
           </svg>
         </Link>
 
         {/* Functional Download Brochure Link */}
-        <a 
+        <a
           href="/documents/New Green Village Floor plan.pdf"
           download="Merit_Commercial_Center_Brochure.pdf"
           className="w-full sm:w-auto px-6 py-3 bg-transparent hover:bg-white/5 text-merit-gold border border-merit-gold text-xs rounded transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer font-secondary decoration-none"
         >
           <span>Download Brochure</span>
-          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          <svg
+            className="w-3.5 h-3.5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+            />
           </svg>
         </a>
       </div>
