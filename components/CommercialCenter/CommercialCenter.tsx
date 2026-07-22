@@ -18,14 +18,14 @@ export default function CommercialCenter() {
   return (
     <section className="w-full bg-merit-green text-white overflow-hidden font-secondary">
       {/* Hero Section Wrapper */}
-      <div className="relative w-full min-h-[50vh] lg:min-h-[65vh] flex flex-col justify-between px-6 py-12 md:px-12 lg:px-20 z-10">
+      <div className="relative w-full min-h-[50vh] lg:min-h-[55vh] flex flex-col justify-between px-6 py-12 md:px-12 lg:px-20 z-10">
         <div className="absolute inset-0 z-[-1]">
           <Image
             src="/images/commercial/15-1.webp"
             alt="Merit Commercial Center Exterior"
             fill
             priority
-            className="object-cover object-center opacity-40 brightness-75"
+            className="object-cover object-top opacity-40 brightness-75"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-merit-green/60 via-merit-green/40 to-merit-green" />
         </div>

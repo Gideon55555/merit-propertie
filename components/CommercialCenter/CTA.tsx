@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <div className="relative w-full bg-gradient-to-br from-merit-green to-merit-green/80 border border-white/10 rounded-lg p-8 md:p-12 overflow-hidden text-center flex flex-col items-center justify-center space-y-6 group font-secondary">
+    <div className="relative w-full bg-[#FDFCF8] from-merit-green to-merit-green/80 border border-white/10 rounded-lg p-8 md:p-12 overflow-hidden text-center flex flex-col items-center justify-center space-y-6 group font-secondary">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-merit-gold/5 rounded-full blur-[80px] pointer-events-none transition-transform duration-700 group-hover:scale-110" />
 
       <div className="absolute top-4 left-4 w-2 h-2 border-t border-l border-merit-gold/30 pointer-events-none" />
@@ -17,11 +17,11 @@ export default function CTA() {
         <span className="text-merit-gold text-xxs md:text-xs font-semibold tracking-widest uppercase font-secondary">
           Exclusive Investment Opportunity
         </span>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-primary text-merit-gold leading-tight font-normal">
+        <h2 className="text-5xl md:text-6xl font-serif font-bold text-merit-green mb-8 leading-[1.1]">
           Establish Your Business in the <br className="hidden sm:inline" />
-          <span className="text-white">Heart of Teklehaymanot</span>
+          <span className="text-merit-gold">Heart of Teklehaymanot</span>
         </h2>
-        <p className="text-white/70 font-light text-base max-w-lg mx-auto leading-relaxed pt-1 font-secondary">
+        <p className="text-gray-600 text-lg mb-10 leading-relaxed font-sans">
           Secure your premium retail or office space today. Schedule a private
           site layout walkthrough or download our comprehensive technical
           blueprint catalog.
@@ -32,7 +32,7 @@ export default function CTA() {
         {/* Tour Booking Link */}
         <Link
           href="#contact"
-          className="w-full sm:w-auto px-6 py-3 bg-merit-gold hover:bg-merit-gold/90 text-black font-medium text-base rounded transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2 group/btn cursor-pointer font-secondary no-underline"
+          className="w-full sm:w-auto px-6 py-3 bg-merit-gold hover:bg-merit-gold/90 font-medium text-base rounded transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2 group/btn cursor-pointer font-secondary no-underline"
         >
           <span>Schedule a Commercial Tour</span>
           <svg
@@ -54,7 +54,7 @@ export default function CTA() {
         <a
           href="/documents/New Green Village Floor plan.pdf"
           download="Merit_Commercial_Center_Brochure.pdf"
-          className="w-full sm:w-auto px-6 py-3 bg-transparent hover:bg-white/5 text-white/70 border border-merit-gold text-base rounded transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer font-secondary decoration-none"
+          className="w-full sm:w-auto px-6 py-3 bg-transparent text-merit-gold border border-merit-gold text-base rounded transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer font-secondary decoration-none"
         >
           <span>Download Brochure</span>
           <svg
