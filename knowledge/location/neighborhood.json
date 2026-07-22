@@ -1,0 +1,29 @@
+{
+  "id": "loc-map-locations",
+  "category": "location",
+  "tags": [
+    "locations",
+    "piassa",
+    "teklehaymanot",
+    "addis ababa",
+    "properties",
+    "commercial center",
+    "apartments"
+  ],
+  "title": "Merit Properties Location Registry",
+  "content": "Merit Properties developments are located in key areas of Addis Ababa. Piassa is the location of our residential apartments, offering convenient access to major destinations including Friendship Park, Unity Park, Meskel Square, shopping areas, and transport connections. Teklehaymanot is the location of Merit Commercial Center, offering strategically positioned retail shop units with road access and corridor access for businesses and investors.",
+  "metadata": {
+    "locations": [
+      {
+        "name": "Piassa",
+        "type": "Residential Apartments",
+        "description": "Prime central Addis Ababa location for Merit Properties residential apartments."
+      },
+      {
+        "name": "Teklehaymanot",
+        "type": "Commercial Property",
+        "description": "Location of Merit Commercial Center offering retail shop units with road and corridor access."
+      }
+    ]
+  }
+}

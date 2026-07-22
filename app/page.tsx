@@ -6,11 +6,13 @@ import { LocationSection } from "@/components/location-section";
 import { AmenitiesSection } from "@/components/amenities-section";
 import { ResidencesSection } from "@/components/residences-section";
 import { ContactSection } from "@/components/contact-section";
+import CommercialCenter from "@/components/CommercialCenter/CommercialCenter";
 import type { Metadata } from "next";
 import LenisWrapper from "@/components/LenisWrapper";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { DroneFootageSection } from "@/components/drone-footage-section";
 import { VirtualTourSection } from "@/components/virtual-tour-section";
+import ChatWidget from "@/components/chat/ChatWidget";
 
 export const metadata: Metadata = {
   title:
@@ -32,8 +34,10 @@ export default function Home() {
         <AmenitiesSection />
         <ResidencesSection />
         <VirtualTourSection />
+        <CommercialCenter/>
         <ContactSection />
         <ScrollToTop />
+        <ChatWidget />
       </LenisWrapper>
 
       {/* JSON-LD structured data for SEO */}

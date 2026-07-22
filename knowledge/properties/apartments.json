@@ -1,0 +1,76 @@
+{
+  "page": "properties",
+  "title": "Available Properties",
+"business": "Merit Properties",
+
+  "location": "Addis Ababa, Ethiopia",
+
+  "summary": "Merit Properties offers residential apartments in Piassa , Addis Ababa. Listings include 1, 2, and 3 bedroom apartments and commercial units.",
+
+  "locations": [
+    {
+      "name": "Piassa",
+      "type": "Residential Apartments",
+      "description": "Prime central Addis Ababa location with convenient access to major destinations including Friendship Park, Unity Park, Meskel Square, shopping areas, and transport connections."
+    }
+  ],
+
+  "residential_properties": [
+    {
+      "name": "Piassa 1 Bedroom Apartment",
+      "location": "Piassa, Addis Ababa",
+      "type": "Apartment",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "gross_area": "49 sqm",
+      "net_area": "43 sqm",
+      "collection": "Urban Comfort Series",
+      "features": [
+        "Open kitchen",
+        "Living and dining area",
+        "Built-in storage",
+        "Two balconies"
+      ],
+      "availability": "Contact for availability and floor options",
+      "details_page": "property-piyassa-1br.html"
+    },
+
+    {
+      "name": "Piassa 2 Bedroom Apartment",
+      "location": "Piassa, Addis Ababa",
+      "type": "Apartment",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "gross_area": "95 sqm",
+      "net_area": "75 sqm",
+      "collection": "Harmony Haven Collection",
+      "features": [
+        "Living and dining area",
+        "Open kitchen",
+        "Built-in wardrobes",
+        "Balcony"
+      ],
+      "availability": "Contact for availability and floor options",
+      "details_page": "property-piyassa-2br.html"
+    },
+
+    {
+      "name": "Piassa 3 Bedroom Apartment",
+      "location": "Piassa, Addis Ababa",
+      "type": "Apartment",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "gross_area": "130 sqm including parking",
+      "net_area": "105 sqm",
+      "collection": "Grand Vista Collection",
+      "features": [
+        "Master en-suite bedroom",
+        "Separate kitchen",
+        "Maid's room",
+        "Balcony",
+        "Parking included"
+      ],
+      "availability": "Contact for availability and floor options",
+      "details_page": "property-piyassa-3br.html"
+    }
+  ]}

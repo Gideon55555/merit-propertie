@@ -1,0 +1,234 @@
+{
+  "property": {
+    "id": "property-teklehaymanot-shops",
+    "name": "Merit Commercial Center",
+    "type": "Commercial Property",
+    "category": "Shops for Sale",
+    "location": {
+      "area": "Teklehaymanot",
+      "city": "Addis Ababa",
+      "country": "Ethiopia"
+    },
+    "developer": "Merit Properties",
+    "listed_by": {
+      "name": "Merit Properties",
+      "phone": "+251911975548",
+      "email": "comtact@meritproperties.com"
+    },
+
+    "description": "Merit Commercial Center is a commercial retail project located in Teklehaymanot, Addis Ababa. The project is built on an 8,000 m² site and includes road-access and corridor-access shops across multiple floors. Shop sizes start from 25 m².",
+
+    "highlights": [
+      "Prime Teklehaymanot commercial location",
+      "8,000 m² development site",
+      "335 total shops",
+      "Road access and corridor access shops",
+      "Shop sizes starting from 25 m²",
+      "Multiple floors including SB, LG, UG and Floors 1-4"
+    ],
+
+    "property_details": {
+      "site_area": "8000 m²",
+      "total_shops": 335,
+      "minimum_shop_size": "25 m²",
+      "available_shop_sizes": [
+        "25 m²",
+        "35 m²"
+      ],
+      "access_types": [
+        "Road Access",
+        "Corridor Access"
+      ],
+      "floors": [
+        "Sub-Basement (SB)",
+        "Lower Ground (LG)",
+        "Upper Ground (UG)",
+        "Floor 1",
+        "Floor 2",
+        "Floor 3",
+        "Floor 4"
+      ]
+    },
+
+    "floor_breakdown": [
+      {
+        "floor": "SB",
+        "name": "Sub-Basement",
+        "total_shops": 27,
+        "shops": [
+          {
+            "type": "Road Access",
+            "size": "25 m²",
+            "count": 11
+          },
+          {
+            "type": "Corridor Access",
+            "size": "35 m²",
+            "count": 16
+          }
+        ]
+      },
+
+      {
+        "floor": "LG",
+        "name": "Lower Ground",
+        "total_shops": 50,
+        "shops": [
+          {
+            "type": "Road Access",
+            "size": "25 m²",
+            "count": 22
+          },
+          {
+            "type": "Corridor Access",
+            "size": "35 m²",
+            "count": 28
+          }
+        ]
+      },
+
+      {
+        "floor": "UG",
+        "name": "Upper Ground",
+        "total_shops": 52,
+        "shops": [
+          {
+            "type": "Road Access",
+            "size": "25 m²",
+            "count": 21
+          },
+          {
+            "type": "Corridor Access",
+            "size": "35 m²",
+            "count": 31
+          }
+        ]
+      },
+
+      {
+        "floor": "Floor 1",
+        "name": "First Level",
+        "total_shops": 53,
+        "shops": [
+          {
+            "type": "Road Access",
+            "size": "25 m²",
+            "count": 22
+          },
+          {
+            "type": "Corridor Access",
+            "size": "35 m²",
+            "count": 31
+          }
+        ]
+      },
+
+      {
+        "floor": "Floor 2",
+        "name": "Second Level",
+        "total_shops": 53,
+        "shops": [
+          {
+            "type": "Road Access",
+            "size": "25 m²",
+            "count": 22
+          },
+          {
+            "type": "Corridor Access",
+            "size": "35 m²",
+            "count": 31
+          }
+        ]
+      },
+
+      {
+        "floor": "Floor 3",
+        "name": "Third Level",
+        "total_shops": 50,
+        "shops": [
+          {
+            "type": "Road Access",
+            "size": "25 m²",
+            "count": 22
+          },
+          {
+            "type": "Corridor Access",
+            "size": "35 m²",
+            "count": 28
+          }
+        ]
+      },
+
+      {
+        "floor": "Floor 4",
+        "name": "Top Level",
+        "total_shops": 50,
+        "shops": [
+          {
+            "type": "Road Access",
+            "size": "25 m²",
+            "count": 22
+          },
+          {
+            "type": "Corridor Access",
+            "size": "35 m²",
+            "count": 28
+          }
+        ]
+      }
+    ],
+
+    "gallery": [
+      "images/comercial/1-1.webp",
+      "images/comercial/2-1.webp",
+      "images/comercial/3-1.webp",
+      "images/comercial/4-1.webp",
+      "images/comercial/5-1.webp",
+      "images/comercial/6-1.webp"
+    ],
+
+    "videos": [
+      {
+        "title": "Merit Commercial Center Portrait 4K Animation",
+        "file": "images/comercial/Merit Commercial Center Portrait 4K Animation.mp4"
+      },
+      {
+        "title": "Merit Commercial Center 4K Animation",
+        "file": "images/comercial/Merit Commercial Center 4K Animation(1).mp4"
+      }
+    ],
+
+    "faq": [
+      {
+        "question": "Where is Merit Commercial Center located?",
+        "answer": "Merit Commercial Center is located in Teklehaymanot, Addis Ababa, Ethiopia."
+      },
+      {
+        "question": "How many shops are available in Merit Commercial Center?",
+        "answer": "The project contains 335 commercial shops."
+      },
+      {
+        "question": "What is the smallest shop size?",
+        "answer": "Commercial units start from 25 m²."
+      },
+      {
+        "question": "What shop access options are available?",
+        "answer": "The project provides both road-access and corridor-access shops."
+      },
+      {
+        "question": "How can I contact Merit Properties?",
+        "answer": "You can contact Merit Properties by phone at +251911975548."
+      }
+    ],
+
+    "keywords": [
+      "commercial shops Addis Ababa",
+      "shops for sale Teklehaymanot",
+      "Merit Commercial Center",
+      "commercial property Ethiopia",
+      "retail space Addis Ababa",
+      "business space Addis Ababa",
+      "shops from 25 square meters"
+    ]
+  }
+}

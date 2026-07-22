@@ -1,0 +1,24 @@
+[
+  {
+    "id": "contact-main-channels",
+    "category": "contact",
+    "tags": ["contact information", "phone number", "sales phone", "email address", "office hours", "location", "social media"],
+    "title": "Merit Properties Contact Details and Inquiry Options",
+    "content": "For inquiries, customers can choose from five distinct classifications: Residential Properties, Commercial Properties, Investment Opportunities, Schedule a Viewing, or General Inquiry. Main physical office: Piassa Ethio Ceramics Bldg, 2nd floor, Addis Ababa, Ethiopia. Primary contact lines: +251 911 975 548 (Sales Inquiries), +251 911 971 336 (Call Center), and +251 911 249 183 (Direct Sales Team). Electronic mail options: contact@meritproperties.et, meritpropertiesplc@gmail.com, and sales@meritproperties.com. Office hours are Monday-Friday 8:30 AM - 5:00 PM, Saturday 8:30 AM - 12:00 PM (Sundays Closed). Official social media channels are maintained on Facebook, Instagram, Twitter, and LinkedIn.",
+    "metadata": {
+      "salesPhone": "+251911975548",
+      "callCenter": "+251911971336",
+      "salesDirect": "+251911249183",
+      "email": "contact@meritproperties.et",
+      "channels": ["Facebook", "Instagram", "Twitter", "LinkedIn"]
+    }
+  },
+  {
+    "id": "contact-faq-portfolio",
+    "category": "contact",
+    "tags": ["faq", "property types", "viewing", "payment options", "management", "investment"],
+    "title": "Frequently Asked Questions Registry",
+    "content": "Official business response logic for incoming client questions: 1. Types of properties offered: Merit Real Estate maintains a diverse portfolio including residential apartments (luxury to studio), commercial office spaces, and mixed-use developments strategically placed across prime locations in Addis Ababa. 2. How to schedule viewings: Clients can submit the web platform contact form, email sales@meritproperties.com, or call +251 911 249 183. 3. Available payment terms: Merit supports flexible avenues consisting of lump-sum upfront payments, structural milestone installment plans, and standard commercial bank financing arrangements. 4. Property management details: Merit offers full property management services covering common area structural maintenance, integrated security services, and infrastructure management. 5. Investment options: High-yield real estate investment opportunities are available across current active project pipelines due to high-growth development areas.",
+    "metadata": {}
+  }
+]
