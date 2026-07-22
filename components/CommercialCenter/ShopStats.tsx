@@ -8,13 +8,19 @@ interface ShopStatsProps {
 }
 
 export default function ShopStats({ floor }: ShopStatsProps) {
-  const roadCount = floor.inventory.roadAccess.reduce((acc, item) => acc + item.count, 0);
-  const corridorCount = floor.inventory.corridorAccess.reduce((acc, item) => acc + item.count, 0);
+  const roadCount = floor.inventory.roadAccess.reduce(
+    (acc, item) => acc + item.count,
+    0,
+  );
+  const corridorCount = floor.inventory.corridorAccess.reduce(
+    (acc, item) => acc + item.count,
+    0,
+  );
   const totalShopsOnFloor = roadCount + corridorCount;
 
   const allSizes = [
-    ...floor.inventory.roadAccess.map(i => parseInt(i.size)),
-    ...floor.inventory.corridorAccess.map(i => parseInt(i.size))
+    ...floor.inventory.roadAccess.map((i) => parseInt(i.size)),
+    ...floor.inventory.corridorAccess.map((i) => parseInt(i.size)),
   ];
   const minSize = allSizes.length ? Math.min(...allSizes) : 11;
   const maxSize = allSizes.length ? Math.max(...allSizes) : 32;
@@ -25,18 +31,39 @@ export default function ShopStats({ floor }: ShopStatsProps) {
       label: "Shops Available",
       sub: `On ${floor.shortName === "SB" || floor.shortName === "LG" || floor.shortName === "UG" ? floor.fullName : `Floor ${floor.shortName}`}`,
       icon: (
-        <svg className="w-6 h-6 text-merit-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+        <svg
+          className="w-6 h-6 text-merit-gold"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
+            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+          />
         </svg>
       ),
     },
     {
-      value: minSize === maxSize ? `${minSize} m²` : `${minSize} - ${maxSize} m²`,
+      value:
+        minSize === maxSize ? `${minSize} m²` : `${minSize} - ${maxSize} m²`,
       label: "Available Sizes",
       sub: "Flexible configurations",
       icon: (
-        <svg className="w-6 h-6 text-merit-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M4 8V4m0 0h4M4 4l5 5m11-5V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
+        <svg
+          className="w-6 h-6 text-merit-gold"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
+            d="M4 8V4m0 0h4M4 4l5 5m11-5V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5"
+          />
         </svg>
       ),
     },
@@ -45,19 +72,49 @@ export default function ShopStats({ floor }: ShopStatsProps) {
       label: "Teklehaymanot, Addis Ababa",
       sub: "High visibility & accessibility",
       icon: (
-        <svg className="w-6 h-6 text-merit-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        <svg
+          className="w-6 h-6 text-merit-gold"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
+            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
+            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+          />
         </svg>
       ),
     },
     {
-      value: roadCount > 0 && corridorCount > 0 ? "Road & Corridor Access" : roadCount > 0 ? "Road Access" : "Corridor Access",
+      value:
+        roadCount > 0 && corridorCount > 0
+          ? "Road & Corridor Access"
+          : roadCount > 0
+            ? "Road Access"
+            : "Corridor Access",
       label: "Floor Connectivity",
       sub: "Optimized retail exposure",
       icon: (
-        <svg className="w-6 h-6 text-merit-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 4L9 7" />
+        <svg
+          className="w-6 h-6 text-merit-gold"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1"
+            d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 4L9 7"
+          />
         </svg>
       ),
     },

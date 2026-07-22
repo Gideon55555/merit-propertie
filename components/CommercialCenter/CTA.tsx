@@ -14,14 +14,14 @@ export default function CTA() {
       <div className="absolute bottom-4 right-4 w-2 h-2 border-b border-r border-merit-gold/30 pointer-events-none" />
 
       <div className="max-w-2xl space-y-2 z-10">
-        <span className="text-merit-gold text-xxs md:text-xs font-semibold tracking-widest uppercase">
+        <span className="text-merit-gold text-xxs md:text-xs font-semibold tracking-widest uppercase font-secondary">
           Exclusive Investment Opportunity
         </span>
-        <h2 className="text-3xl md:text-4xl font-primary text-white font-bold leading-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-primary text-merit-gold leading-tight font-normal">
           Establish Your Business in the <br className="hidden sm:inline" />
-          <span className="text-merit-gold">Heart of Teklehaymanot</span>
+          <span className="text-white">Heart of Teklehaymanot</span>
         </h2>
-        <p className="text-white/75 font-light text-xs md:text-sm max-w-lg mx-auto leading-relaxed pt-1">
+        <p className="text-white/70 font-light text-base max-w-lg mx-auto leading-relaxed pt-1 font-secondary">
           Secure your premium retail or office space today. Schedule a private
           site layout walkthrough or download our comprehensive technical
           blueprint catalog.
@@ -32,11 +32,11 @@ export default function CTA() {
         {/* Tour Booking Link */}
         <Link
           href="#contact"
-          className="w-full sm:w-auto px-6 py-3 bg-merit-gold hover:bg-merit-gold/90 text-black font-medium text-xs rounded transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2 group/btn cursor-pointer font-secondary no-underline"
+          className="w-full sm:w-auto px-6 py-3 bg-merit-gold hover:bg-merit-gold/90 text-black font-medium text-base rounded transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2 group/btn cursor-pointer font-secondary no-underline"
         >
           <span>Schedule a Commercial Tour</span>
           <svg
-            className="w-3.5 h-3.5 transform transition-transform duration-300 group-hover/btn:translate-x-1"
+            className="w-4 h-4 transform transition-transform duration-300 group-hover/btn:translate-x-1"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -54,11 +54,11 @@ export default function CTA() {
         <a
           href="/documents/New Green Village Floor plan.pdf"
           download="Merit_Commercial_Center_Brochure.pdf"
-          className="w-full sm:w-auto px-6 py-3 bg-transparent hover:bg-white/5 text-merit-gold border border-merit-gold text-xs rounded transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer font-secondary decoration-none"
+          className="w-full sm:w-auto px-6 py-3 bg-transparent hover:bg-white/5 text-white/70 border border-merit-gold text-base rounded transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer font-secondary decoration-none"
         >
           <span>Download Brochure</span>
           <svg
-            className="w-3.5 h-3.5"
+            className="w-4 h-4"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

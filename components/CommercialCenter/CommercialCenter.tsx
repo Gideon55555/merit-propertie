@@ -21,7 +21,7 @@ export default function CommercialCenter() {
       <div className="relative w-full min-h-[50vh] lg:min-h-[65vh] flex flex-col justify-between px-6 py-12 md:px-12 lg:px-20 z-10">
         <div className="absolute inset-0 z-[-1]">
           <Image
-            src="/images/amenities/hero.jpg"
+            src="/images/commercial/15-1.webp"
             alt="Merit Commercial Center Exterior"
             fill
             priority
@@ -39,7 +39,7 @@ export default function CommercialCenter() {
             Commercial Spaces <br />
             <span className="text-white">Designed for Business Success</span>
           </h1>
-          <p className="text-white/80 font-secondary font-light max-w-2xl leading-relaxed">
+          <p className="text-white/80 font-secondary font-light text-sm md:text-base max-w-2xl leading-relaxed">
             Located in the heart of Teklehaymanot, this dynamic district stands
             as one of the city's most vibrant commercial hubs. Known for its
             constant flow of people, diverse businesses, and strong economic
