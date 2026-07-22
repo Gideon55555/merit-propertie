@@ -18,7 +18,7 @@ export default function ChatMessage({ role, message }: Props) {
         ${isAI ? "justify-start" : "justify-end"}
       `}
     >
-      <div
+      <p
         className={`
           max-w-[85%]
           px-4
@@ -55,7 +55,7 @@ export default function ChatMessage({ role, message }: Props) {
         ) : (
           <p>{message}</p>
         )}
-      </div>
+      </p>
     </div>
   );
 }
