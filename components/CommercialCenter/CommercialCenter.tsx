@@ -41,8 +41,8 @@ export default function CommercialCenter() {
           </h1>
           <p className="text-white/80 font-secondary font-light text-sm md:text-base max-w-2xl leading-relaxed">
             Located in the heart of Teklehaymanot, this dynamic district stands
-            as one of the city's most vibrant commercial hubs. Known for its
-            constant flow of people, diverse businesses, and strong economic
+            as one of the city&apos;s most vibrant commercial hubs. Known for
+            its constant flow of people, diverse businesses, and strong economic
             activity, Teklehaymanot offers unmatched visibility and
             accessibility for any commercial investment.
           </p>

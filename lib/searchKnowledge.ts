@@ -23,7 +23,7 @@ function getJsonFiles(dir: string): string[] {
 }
 
 // Convert nested JSON into searchable text
-function flatten(data: any): string {
+function flatten(data: string | Array<string | object> | object): string {
   if (typeof data === "string") return data;
 
   if (Array.isArray(data)) {
@@ -68,10 +68,9 @@ export function searchKnowledge(query: string): KnowledgeResult[] {
         });
       }
     } catch (err) {
-
-    console.error("Failed to read:", file);
-    console.error(err);
-}
+      console.error("Failed to read:", file);
+      console.error(err);
+    }
   }
 
   results.sort((a, b) => b.score - a.score);

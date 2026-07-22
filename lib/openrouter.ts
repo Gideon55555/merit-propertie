@@ -27,6 +27,8 @@ export async function askOpenRouter(systemPrompt: string, userMessage: string) {
     const data = JSON.parse(rawData);
     return data.choices[0].message.content;
   } catch (error) {
+    console.log(error);
+
     throw new Error(`Failed to parse OpenRouter response: ${rawData}`);
   }
 }
