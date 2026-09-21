@@ -42,7 +42,8 @@ export function HeroSection() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}>
+              transition={{ duration: 0.6 }}
+            >
               <h1 className="text-5xl md:text-8xl font-serif font-bold text-white leading-tight mb-4">
                 <span className="block font-serif">Small Footprint,</span>
                 <span className="block font-serif">Grand Living</span>
@@ -55,7 +56,8 @@ export function HeroSection() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}>
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               <p className="text-lg md:text-xl text-white/90 mb-8">
                 Welcome to Merit Real Estate. Redefining Excellence in the Real
                 Estate Industry.
@@ -66,9 +68,10 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4">
+              className="flex flex-col sm:flex-row gap-4"
+            >
               <Button className="bg-white text-merit-green hover:bg-white/90 text-base px-6 py-6">
-                <Link href="/properties">Explore Properties</Link>
+                <Link href="/contact">Contact Us</Link>
               </Button>
               {/* <Button
                 variant="outline"
@@ -84,7 +87,8 @@ export function HeroSection() {
           <motion.div
             // className="absolute bottom-8 left-1/2 -translate-x-1/2"
             animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}>
+            transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
+          >
             <div className="w-8 h-12 border-2 border-white/50 rounded-full flex justify-center">
               <motion.div
                 className="w-1.5 h-3 bg-white/80 rounded-full mt-2"
