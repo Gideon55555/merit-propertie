@@ -22,7 +22,8 @@ export default function CTA() {
           <span className="text-merit-gold">Heart of Teklehaymanot</span>
         </h2>
         <p className="text-gray-600 text-lg mb-10 leading-relaxed font-sans">
-          Secure your premium retail or office space today. Schedule a private
+          Secure your premium retail or office space today with modular shop units
+          starting from 11 m² to 32 m² across all floors. Schedule a private
           site layout walkthrough or download our comprehensive technical
           blueprint catalog.
         </p>

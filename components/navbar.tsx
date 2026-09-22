@@ -13,7 +13,7 @@ import { ShimmerButton } from "./ui/shimmer-button";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  // { name: "Properties", path: "/properties" },
+  { name: "Properties", path: "/properties" },
   { name: "Amenities", path: "/amenities" },
   { name: "Location", path: "/location" },
   { name: "Gallery", path: "/gallery" },

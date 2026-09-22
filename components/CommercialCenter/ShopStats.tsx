@@ -47,10 +47,9 @@ export default function ShopStats({ floor }: ShopStatsProps) {
       ),
     },
     {
-      value:
-        minSize === maxSize ? `${minSize} m²` : `${minSize} - ${maxSize} m²`,
+      value: "11 m² – 32 m²",
       label: "Available Sizes",
-      sub: "Flexible configurations",
+      sub: "Starting from 11 m² to 32 m²",
       icon: (
         <svg
           className="w-6 h-6 text-merit-gold"

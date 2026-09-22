@@ -70,8 +70,11 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button className="bg-white text-merit-green hover:bg-white/90 text-base px-6 py-6">
-                <Link href="/contact">Contact Us</Link>
+              <Button
+                asChild
+                className="bg-white text-merit-green hover:bg-white/90 text-base px-6 py-6 font-medium cursor-pointer"
+              >
+                <Link href="/properties">Explore Properties</Link>
               </Button>
               {/* <Button
                 variant="outline"
