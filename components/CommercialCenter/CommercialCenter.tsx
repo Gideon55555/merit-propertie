@@ -16,7 +16,7 @@ export default function CommercialCenter() {
     floorTabsData.find((tab) => tab.id === activeTab) || floorTabsData[0];
 
   return (
-    <section className="w-full bg-merit-green text-white overflow-hidden font-secondary">
+    <section id="commercial-center" className="w-full bg-merit-green text-white overflow-hidden font-secondary">
       {/* Hero Section Wrapper */}
       <div className="relative w-full min-h-[50vh] lg:min-h-[55vh] flex flex-col justify-between px-6 py-12 md:px-12 lg:px-20 z-10">
         <div className="absolute inset-0 z-[-1]">
@@ -41,10 +41,9 @@ export default function CommercialCenter() {
           </h1>
           <p className="text-white/80 font-secondary font-light text-sm md:text-base max-w-2xl leading-relaxed">
             Located in the heart of Teklehaymanot, this dynamic district stands
-            as one of the city&apos;s most vibrant commercial hubs. Known for
-            its constant flow of people, diverse businesses, and strong economic
-            activity, Teklehaymanot offers unmatched visibility and
-            accessibility for any commercial investment.
+            as one of the city&apos;s most vibrant commercial hubs. Featuring 335
+            modular shop units starting from 11 m² to 32 m² across all floors,
+            Teklehaymanot offers unmatched visibility and accessibility for any commercial investment.
           </p>
         </div>
       </div>

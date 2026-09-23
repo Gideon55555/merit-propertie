@@ -135,9 +135,14 @@ export default function CommercialInfo({ floor }: CommercialInfoProps) {
       </div>
 
       <div>
-        <h3 className="text-white/70 font-semibold tracking-wider uppercase text-base mb-4">
-          Shop Inventory
-        </h3>
+        <div className="flex flex-wrap justify-between items-center gap-2 mb-4">
+          <h3 className="text-white/70 font-semibold tracking-wider uppercase text-base">
+            Shop Inventory
+          </h3>
+          <span className="text-merit-gold text-xs font-mono px-2.5 py-1 rounded bg-white/10 border border-merit-gold/30">
+            Shops from 11 m² to 32 m²
+          </span>
+        </div>
 
         <div className="space-y-4">
           {floor.inventory.roadAccess.length > 0 && (

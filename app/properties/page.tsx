@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import { PropertiesHero } from "@/components/properties/properties-hero";
-import { PropertiesFilter } from "@/components/properties/properties-filter";
 import { PropertiesGrid } from "@/components/properties/properties-grid";
+import CTA from "@/components/CommercialCenter/CTA";
 import { PropertiesCta } from "@/components/properties/properties-cta";
 import LenisWrapper from "@/components/LenisWrapper";
 
 export const metadata: Metadata = {
   title: "Properties | Merit Real Estate",
   description:
-    "Explore Merit Real Estate's portfolio of exceptional properties in prime locations. Find your perfect home, commercial space, or investment opportunity.",
+    "Explore Merit Real Estate's portfolio of exceptional residential apartments in Piassa and commercial spaces in Teklehaymanot, Addis Ababa.",
   openGraph: {
     title: "Properties | Merit Real Estate",
     description:
-      "Explore Merit Real Estate's portfolio of exceptional properties in prime locations. Find your perfect home, commercial space, or investment opportunity.",
+      "Explore Merit Real Estate's portfolio of exceptional residential apartments in Piassa and commercial spaces in Teklehaymanot, Addis Ababa.",
     images: [
       {
         url: "/og-properties.jpg",
@@ -29,8 +29,12 @@ export default function PropertiesPage() {
     <div className="flex flex-col min-h-screen bg-merit-green">
       <LenisWrapper>
         <PropertiesHero />
-        <PropertiesFilter />
         <PropertiesGrid />
+        <section className="py-8 md:py-12">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <CTA />
+          </div>
+        </section>
         <PropertiesCta />
       </LenisWrapper>
 
@@ -44,7 +48,7 @@ export default function PropertiesPage() {
             name: "Merit Real Estate Properties",
             url: "https://meritrealestate.com/properties",
             description:
-              "Explore Merit Real Estate's portfolio of exceptional properties in prime locations. Find your perfect home, commercial space, or investment opportunity.",
+              "Explore Merit Real Estate's portfolio of exceptional properties including Piassa residential apartments and Teklehaymanot commercial center in Addis Ababa.",
             provider: {
               "@type": "RealEstateAgent",
               name: "Merit Real Estate",

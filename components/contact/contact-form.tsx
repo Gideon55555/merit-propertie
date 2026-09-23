@@ -41,12 +41,13 @@ export function ContactForm() {
 
   return (
     <motion.div
+      id="contact-form"
       ref={ref}
       variants={fadeIn}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       transition={{ duration: 0.6 }}
-      className="bg-merit-green/50 backdrop-blur-sm rounded-lg border border-white/10 p-8 md:p-10">
+      className="bg-merit-green/50 backdrop-blur-sm rounded-lg border border-white/10 p-8 md:p-10 scroll-mt-24">
       <Badge className="bg-merit-gold/10 text-merit-gold hover:bg-merit-gold/20 mb-4">
         Contact Us
       </Badge>

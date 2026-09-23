@@ -16,24 +16,27 @@
       "email": "comtact@meritproperties.com"
     },
 
-    "description": "Merit Commercial Center is a commercial retail project located in Teklehaymanot, Addis Ababa. The project is built on an 8,000 m² site and includes road-access and corridor-access shops across multiple floors. Shop sizes start from 25 m².",
+    "description": "Merit Commercial Center is a commercial retail project located in Teklehaymanot, Addis Ababa. The project is built on an 8,000 m² site and includes road-access and corridor-access shops across multiple floors. Shop sizes range from 11 m² to 32 m².",
 
     "highlights": [
       "Prime Teklehaymanot commercial location",
       "8,000 m² development site",
       "335 total shops",
       "Road access and corridor access shops",
-      "Shop sizes starting from 25 m²",
+      "Shop sizes ranging from 11 m² to 32 m²",
       "Multiple floors including SB, LG, UG and Floors 1-4"
     ],
 
     "property_details": {
       "site_area": "8000 m²",
       "total_shops": 335,
-      "minimum_shop_size": "25 m²",
+      "minimum_shop_size": "11 m²",
+      "maximum_shop_size": "32 m²",
       "available_shop_sizes": [
-        "25 m²",
-        "35 m²"
+        "11 m²",
+        "16 m²",
+        "22 m²",
+        "32 m²"
       ],
       "access_types": [
         "Road Access",
@@ -58,12 +61,12 @@
         "shops": [
           {
             "type": "Road Access",
-            "size": "25 m²",
+            "size": "11 m² to 22 m²",
             "count": 11
           },
           {
             "type": "Corridor Access",
-            "size": "35 m²",
+            "size": "11 m² to 32 m²",
             "count": 16
           }
         ]
@@ -76,13 +79,13 @@
         "shops": [
           {
             "type": "Road Access",
-            "size": "25 m²",
-            "count": 22
+            "size": "11 m² to 22 m²",
+            "count": 28
           },
           {
             "type": "Corridor Access",
-            "size": "35 m²",
-            "count": 28
+            "size": "11 m² to 32 m²",
+            "count": 46
           }
         ]
       },
@@ -94,13 +97,13 @@
         "shops": [
           {
             "type": "Road Access",
-            "size": "25 m²",
-            "count": 21
+            "size": "11 m² to 22 m²",
+            "count": 27
           },
           {
             "type": "Corridor Access",
-            "size": "35 m²",
-            "count": 31
+            "size": "11 m² to 32 m²",
+            "count": 55
           }
         ]
       },
@@ -112,13 +115,13 @@
         "shops": [
           {
             "type": "Road Access",
-            "size": "25 m²",
-            "count": 22
+            "size": "11 m² to 22 m²",
+            "count": 30
           },
           {
             "type": "Corridor Access",
-            "size": "35 m²",
-            "count": 31
+            "size": "11 m² to 32 m²",
+            "count": 54
           }
         ]
       },
@@ -130,13 +133,13 @@
         "shops": [
           {
             "type": "Road Access",
-            "size": "25 m²",
-            "count": 22
+            "size": "11 m² to 22 m²",
+            "count": 28
           },
           {
             "type": "Corridor Access",
-            "size": "35 m²",
-            "count": 31
+            "size": "11 m² to 32 m²",
+            "count": 54
           }
         ]
       },
@@ -148,13 +151,13 @@
         "shops": [
           {
             "type": "Road Access",
-            "size": "25 m²",
-            "count": 22
+            "size": "11 m² to 22 m²",
+            "count": 28
           },
           {
             "type": "Corridor Access",
-            "size": "35 m²",
-            "count": 28
+            "size": "11 m² to 32 m²",
+            "count": 48
           }
         ]
       },
@@ -166,13 +169,13 @@
         "shops": [
           {
             "type": "Road Access",
-            "size": "25 m²",
-            "count": 22
+            "size": "11 m² to 22 m²",
+            "count": 28
           },
           {
             "type": "Corridor Access",
-            "size": "35 m²",
-            "count": 28
+            "size": "11 m² to 32 m²",
+            "count": 48
           }
         ]
       }
@@ -209,7 +212,7 @@
       },
       {
         "question": "What is the smallest shop size?",
-        "answer": "Commercial units start from 25 m²."
+        "answer": "Commercial units start from 11 m² and range up to 32 m²."
       },
       {
         "question": "What shop access options are available?",
@@ -228,7 +231,7 @@
       "commercial property Ethiopia",
       "retail space Addis Ababa",
       "business space Addis Ababa",
-      "shops from 25 square meters"
+      "shops from 11 square meters to 32 square meters"
     ]
   }
 }

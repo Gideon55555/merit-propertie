@@ -23,19 +23,27 @@ export const floorTabsData: FloorData[] = [
     id: "sb",
     shortName: "SB",
     fullName: "Semi Basement (SB)",
-    description: "Basic concepts to associate on the project.",
+    description: "Versatile split-level commercial marketplace with flexible modular shop sizes starting from 11 m² to 32 m².",
     features: [
       "End-to-End Marketplace Solutions",
       "Dynamic Parking Solutions",
       "Visible & Balcony-Oriented Shops",
-      "Variable Shop Sizes",
+      "Shops From 11 m² to 32 m²",
       "Interconnected Corridors",
       "Modular Shops",
     ],
     image: "/images/commercial/2-1.webp",
     inventory: {
-      roadAccess: [{ size: "22 m²", count: 11 }],
-      corridorAccess: [{ size: "32 m²", count: 16 }],
+      roadAccess: [
+        { size: "22 m²", count: 7 },
+        { size: "16 m²", count: 2 },
+        { size: "11 m²", count: 2 },
+      ],
+      corridorAccess: [
+        { size: "32 m²", count: 8 },
+        { size: "16 m²", count: 4 },
+        { size: "11 m²", count: 4 },
+      ],
     },
   },
   {
@@ -43,12 +51,12 @@ export const floorTabsData: FloorData[] = [
     shortName: "LG",
     fullName: "Lower Ground (LG)",
     description:
-      "Highly accessible split-level retail spaces offering extensive floor corridors.",
+      "Highly accessible split-level retail spaces offering extensive floor corridors with shop units starting from 11 m² to 32 m².",
     features: [
       "Strategic Positioning",
       "Corridor Access",
       "Dual Zone Access",
-      "High Visibility",
+      "Shops From 11 m² to 32 m²",
       "Premium Lighting",
       "Loading Zone Proximity",
     ],
@@ -71,12 +79,12 @@ export const floorTabsData: FloorData[] = [
     shortName: "UG",
     fullName: "Upper Ground (UG)",
     description:
-      "Prime street-facing and interior plaza retail hubs capturing maximum passing foot traffic.",
+      "Prime street-facing and interior plaza retail hubs capturing maximum passing foot traffic, with units starting from 11 m² to 32 m².",
     features: [
       "Main Entrance Exposure",
       "High Volumetric Ceilings",
       "Pedestrian Flow Alignment",
-      "Display Window Space",
+      "Shops From 11 m² to 32 m²",
       "Premium Anchors",
       "Multiple Access Gateways",
     ],
@@ -99,12 +107,12 @@ export const floorTabsData: FloorData[] = [
     shortName: "1",
     fullName: "Floor 1",
     description:
-      "Elevated retail and corporate service layout optimized for standard business operations.",
+      "Elevated retail and corporate service layout optimized for standard business operations, with shops starting from 11 m² to 32 m².",
     features: [
       "Escalator Connectivity",
       "Spacious Walkways",
       "Dedicated Business Signage",
-      "Integrated Services",
+      "Shops From 11 m² to 32 m²",
       "Natural Ambient Lighting",
       "Flexible Unit Merging",
     ],
@@ -127,12 +135,12 @@ export const floorTabsData: FloorData[] = [
     shortName: "2",
     fullName: "Floor 2",
     description:
-      "Premium commercial units configured flawlessly for specialized retail and premium corporate offices.",
+      "Premium commercial units configured flawlessly for specialized retail and corporate offices, starting from 11 m² to 32 m².",
     features: [
       "Panoramas of Teklehaymanot",
       "Quiet Zone Separation",
       "High Speed Elevator Access",
-      "Tailored Layout Structures",
+      "Shops From 11 m² to 32 m²",
       "Optimized IT Routing",
       "Executive Lounge Access",
     ],
@@ -140,8 +148,8 @@ export const floorTabsData: FloorData[] = [
     inventory: {
       roadAccess: [
         { size: "22 m²", count: 18 },
-        { size: "11 m²", count: 8 },
         { size: "16 m²", count: 2 },
+        { size: "11 m²", count: 8 },
       ],
       corridorAccess: [
         { size: "32 m²", count: 22 },
@@ -155,16 +163,44 @@ export const floorTabsData: FloorData[] = [
     shortName: "3",
     fullName: "Floor 3",
     description:
-      "Top-tier administrative and customized lifestyle spaces giving your enterprise unmatched stature.",
+      "Top-tier administrative and customized lifestyle spaces giving your enterprise unmatched stature, with units starting from 11 m² to 32 m².",
     features: [
       "Panoramic Skyline Views",
       "Maximum Privacy Floorplan",
       "Exclusive Atrium Lighting",
-      "Custom Fit-Out Support",
+      "Shops From 11 m² to 32 m²",
       "Acoustic Insulation",
       "Proximity to Rooftop Facilities",
     ],
     image: "/images/commercial/12-1.webp",
+    inventory: {
+      roadAccess: [
+        { size: "22 m²", count: 18 },
+        { size: "16 m²", count: 2 },
+        { size: "11 m²", count: 8 },
+      ],
+      corridorAccess: [
+        { size: "32 m²", count: 16 },
+        { size: "16 m²", count: 18 },
+        { size: "11 m²", count: 14 },
+      ],
+    },
+  },
+  {
+    id: "f4",
+    shortName: "4",
+    fullName: "Floor 4",
+    description:
+      "Top-level commercial executive units with expansive corridor access and modular shop configurations starting from 11 m² to 32 m².",
+    features: [
+      "Panoramic Teklehaymanot Views",
+      "Modular Retail Spaces",
+      "Elevator & Stairwell Access",
+      "Shops From 11 m² to 32 m²",
+      "Flexible Merging Capabilities",
+      "High Visibility Walkways",
+    ],
+    image: "/images/commercial/13-1.webp",
     inventory: {
       roadAccess: [
         { size: "22 m²", count: 18 },

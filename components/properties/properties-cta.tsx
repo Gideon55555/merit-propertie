@@ -5,7 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 
 export function PropertiesCta() {
   const ref = useRef(null);
@@ -36,20 +36,12 @@ export function PropertiesCta() {
               notify you when something matching your criteria becomes
               available.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <div className="flex justify-center">
               <Button
                 asChild
-                className="bg-merit-gold hover:bg-merit-gold/90 text-black">
+                className="bg-merit-gold hover:bg-merit-gold/90 text-merit-green font-bold px-8 py-6 text-base shadow-lg">
                 <Link href="/contact">
-                  <Phone className="mr-2 h-4 w-4" /> Contact Our Team
-                </Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                className="border-white/20 text-white hover:bg-white/10">
-                <Link href="/custom-search">
-                  Custom Property Search <ArrowRight className="ml-2 h-4 w-4" />
+                  <Phone className="mr-2 h-5 w-5 text-merit-green" /> Contact Our Team
                 </Link>
               </Button>
             </div>
