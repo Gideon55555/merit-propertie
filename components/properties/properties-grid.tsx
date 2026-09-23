@@ -17,6 +17,8 @@ import { MapPin, Bed, Bath, Square, Heart, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
+import { properties } from "@/data/properties";
+
 export function PropertiesGrid() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
@@ -47,92 +49,8 @@ export function PropertiesGrid() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const properties = [
-    {
-      id: 1,
-      title: "Urban Comfort Residences",
-      subtitle: "One Bedroom Apartment",
-      type: "Residential",
-      categoryKey: "residential",
-      status: "Available",
-      location: "Piassa, Addis Ababa",
-      price: "Contact for Pricing",
-      bedrooms: 1,
-      bathrooms: 1,
-      areaNum: 49,
-      area: "49 m² Gross (44 m² Net)",
-      image: "/images/one-bedroom.png",
-      featured: true,
-      description:
-        "Designed with innovation and efficiency in mind, maximizing every inch of space with an open kitchen, comfortable bedroom, and dual balconies.",
-      features: ["Open kitchen", "Living & dining", "Built-in storage", "2 Balconies"],
-      link: "/properties/one-bedroom",
-      buttonText: "View Details",
-    },
-    {
-      id: 2,
-      title: "Harmony Haven Residences",
-      subtitle: "Two Bedroom Apartment",
-      type: "Residential",
-      categoryKey: "residential",
-      status: "Available",
-      location: "Piassa, Addis Ababa",
-      price: "Contact for Pricing",
-      bedrooms: 2,
-      bathrooms: 2,
-      areaNum: 95,
-      area: "95 m² Gross (75 m² Net)",
-      image: "/images/two-bedroom.png",
-      featured: true,
-      description:
-        "Practical and contemporary layout spanning 95 m², ideal for small families or professionals with master bedroom suite, built-in wardrobes, and balcony.",
-      features: ["Master suite", "Spacious living area", "Modern kitchen", "Private balcony"],
-      link: "/properties/two-bedroom",
-      buttonText: "View Details",
-    },
-    {
-      id: 3,
-      title: "Grand Vista Residences",
-      subtitle: "Three Bedroom Apartment",
-      type: "Residential",
-      categoryKey: "residential",
-      status: "Available",
-      location: "Piassa, Addis Ababa",
-      price: "Contact for Pricing",
-      bedrooms: 3,
-      bathrooms: 2,
-      areaNum: 130,
-      area: "130 m² Gross (105 m² Net)",
-      image: "/images/three-bedroom.png",
-      featured: true,
-      description:
-        "The pinnacle of urban luxury living with a master en-suite, two additional bedrooms, dedicated maid's room, generous living area, and parking.",
-      features: ["Master en-suite", "Maid's room", "Dedicated parking", "Generous balcony"],
-      link: "/properties/three-bedroom",
-      buttonText: "View Details",
-    },
-    {
-      id: 4,
-      title: "Merit Commercial Center",
-      subtitle: "Retail & Modular Shops",
-      type: "Commercial",
-      categoryKey: "commercial",
-      status: "Under Construction",
-      location: "Teklehaymanot, Addis Ababa",
-      price: "Contact for Pricing",
-      bedrooms: null,
-      bathrooms: null,
-      areaNum: 11,
-      area: "11 m² – 32 m² units (8,000 m² site)",
-      image: "/images/commercial/2-1.webp",
-      featured: true,
-      description:
-        "Vibrant commercial development offering 335 road-access and corridor-access shops across multiple floors (SB, LG, UG, Floors 1–4) with dynamic parking.",
-      features: ["335 Shops", "Road & Corridor Access", "7 Floor Levels", "High Foot Traffic"],
-      link: "/properties/commercial-center",
-      buttonText: "View Details",
-    },
-  ];
+  const residentialCount = properties.filter((p) => p.categoryKey === "residential").length;
+  const commercialCount = properties.filter((p) => p.categoryKey === "commercial").length;
 
   // Filtering
   const filteredProperties = properties.filter((property) => {
@@ -185,7 +103,7 @@ export function PropertiesGrid() {
                     : "text-white/80 hover:text-white"
                 }`}
               >
-                Residential (3)
+                Residential ({residentialCount})
               </button>
               <button
                 onClick={() => setCategory("commercial")}
@@ -195,7 +113,7 @@ export function PropertiesGrid() {
                     : "text-white/80 hover:text-white"
                 }`}
               >
-                Commercial (1)
+                Commercial ({commercialCount})
               </button>
             </div>
 
@@ -232,7 +150,7 @@ export function PropertiesGrid() {
                 <div className="relative overflow-hidden bg-black/20">
                   <div className="relative w-full h-72 md:h-80">
                     <Image
-                      src={property.image}
+                      src={property.cardImage || property.image}
                       alt={property.title}
                       fill
                       className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
@@ -273,7 +191,7 @@ export function PropertiesGrid() {
                   <div>
                     <div className="flex items-center text-sm text-white/70 mb-2">
                       <MapPin className="h-4 w-4 text-merit-gold mr-1.5 flex-shrink-0" />
-                      <span>{property.location}</span>
+                      <span>{property.shortLocation || property.location}</span>
                     </div>
 
                     <h3 className="font-primary text-2xl font-bold text-white mb-1 group-hover:text-merit-gold transition-colors">
@@ -284,12 +202,12 @@ export function PropertiesGrid() {
                     </p>
 
                     <p className="text-white/80 text-sm font-secondary line-clamp-2 mb-4 leading-relaxed">
-                      {property.description}
+                      {property.shortDescription || property.description}
                     </p>
 
                     {/* Features list */}
                     <div className="flex flex-wrap gap-2 mb-5">
-                      {property.features.map((feat, idx) => (
+                      {(property.cardFeatures || property.features).map((feat, idx) => (
                         <span
                           key={idx}
                           className="bg-white/5 border border-white/10 text-white/80 text-xs px-2.5 py-1 rounded-md"
@@ -317,7 +235,7 @@ export function PropertiesGrid() {
                       )}
                       <div className="flex items-center text-sm">
                         <Square className="h-4 w-4 text-merit-gold mr-1.5" />
-                        <span>{property.area}</span>
+                        <span>{property.areaLabel || property.grossArea}</span>
                       </div>
                     </div>
                   </div>
@@ -328,8 +246,8 @@ export function PropertiesGrid() {
                     asChild
                     className="w-full bg-merit-gold hover:bg-merit-gold/90 text-merit-green font-bold h-11 transition-all shadow-md"
                   >
-                    <Link href={property.link} className="flex items-center justify-center">
-                      <span>{property.buttonText}</span>
+                    <Link href={`/properties/${property.slug}`} className="flex items-center justify-center">
+                      <span>View Details</span>
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>

@@ -23,13 +23,11 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { View360Badge } from "./view-360-badge";
+import { Property, OtherUnitLink, ResidenceSpec } from "@/data/properties";
 
-export interface ResidenceSpec {
-  name: string;
-  value: string;
-}
+export type { ResidenceSpec };
 
-export interface ResidenceData {
+export interface ResidenceData extends Partial<Property> {
   slug: string;
   title: string;
   subtitle: string;
@@ -37,8 +35,8 @@ export interface ResidenceData {
   location: string;
   grossArea: string;
   netArea: string;
-  bedrooms: number;
-  bathrooms: number;
+  bedrooms: number | null;
+  bathrooms: number | null;
   balconies: number;
   hasMaidRoom?: boolean;
   hasParking?: boolean;
@@ -47,16 +45,19 @@ export interface ResidenceData {
   virtualTourUrl?: string;
   description: string;
   features: string[];
-  conclusion: string;
-  specs: ResidenceSpec[];
-  otherUnits: {
-    name: string;
-    href: string;
-    area: string;
-  }[];
+  conclusion?: string;
+  specs?: ResidenceSpec[];
+  otherUnits?: OtherUnitLink[];
 }
 
-export default function ResidenceDetail({ data }: { data: ResidenceData }) {
+export default function ResidenceDetail({
+  data,
+  otherUnits,
+}: {
+  data: ResidenceData;
+  otherUnits?: OtherUnitLink[];
+}) {
+  const displayOtherUnits = otherUnits || data.otherUnits || [];
   const [isTourStarted, setIsTourStarted] = useState(false);
   const [isLoadingTour, setIsLoadingTour] = useState(true);
   return (
@@ -241,32 +242,36 @@ export default function ResidenceDetail({ data }: { data: ResidenceData }) {
                 ))}
               </ul>
 
-              <p className="text-xs text-white/70 italic border-t border-white/10 pt-4 leading-relaxed">
-                {data.conclusion}
-              </p>
+              {data.conclusion && (
+                <p className="text-xs text-white/70 italic border-t border-white/10 pt-4 leading-relaxed">
+                  {data.conclusion}
+                </p>
+              )}
             </div>
 
             {/* Room Dimensions Table */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-primary text-white font-bold mb-4 flex items-center">
-                <Square className="w-5 h-5 text-merit-gold mr-2" />
-                Room Area Breakdown
-              </h3>
+            {data.specs && data.specs.length > 0 && (
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+                <h3 className="text-xl font-primary text-white font-bold mb-4 flex items-center">
+                  <Square className="w-5 h-5 text-merit-gold mr-2" />
+                  Room Area Breakdown
+                </h3>
 
-              <div className="divide-y divide-white/10">
-                {data.specs.map((spec, idx) => (
-                  <div
-                    key={idx}
-                    className="py-3 flex justify-between items-center text-sm"
-                  >
-                    <span className="text-white/70">{spec.name}</span>
-                    <span className="font-mono font-semibold text-merit-gold">
-                      {spec.value}
-                    </span>
-                  </div>
-                ))}
+                <div className="divide-y divide-white/10">
+                  {data.specs.map((spec, idx) => (
+                    <div
+                      key={idx}
+                      className="py-3 flex justify-between items-center text-sm"
+                    >
+                      <span className="text-white/70">{spec.name}</span>
+                      <span className="font-mono font-semibold text-merit-gold">
+                        {spec.value}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
 
@@ -449,22 +454,24 @@ export default function ResidenceDetail({ data }: { data: ResidenceData }) {
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {data.otherUnits.map((unit, idx) => (
-              <Link
-                key={idx}
-                href={unit.href}
-                className="p-5 rounded-xl bg-white/5 border border-white/10 hover:border-merit-gold/50 hover:bg-white/10 transition-all block group"
-              >
-                <div className="text-sm font-semibold text-white group-hover:text-merit-gold transition-colors">
-                  {unit.name}
-                </div>
-                <div className="text-xs text-merit-gold mt-1 font-mono">
-                  {unit.area}
-                </div>
-              </Link>
-            ))}
-          </div>
+          {displayOtherUnits.length > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {displayOtherUnits.map((unit, idx) => (
+                <Link
+                  key={idx}
+                  href={unit.href}
+                  className="p-5 rounded-xl bg-white/5 border border-white/10 hover:border-merit-gold/50 hover:bg-white/10 transition-all block group"
+                >
+                  <div className="text-sm font-semibold text-white group-hover:text-merit-gold transition-colors">
+                    {unit.name}
+                  </div>
+                  <div className="text-xs text-merit-gold mt-1 font-mono">
+                    {unit.area}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Bottom Booking CTA */}
