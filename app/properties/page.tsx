@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { PropertiesHero } from "@/components/properties/properties-hero";
 import { PropertiesGrid } from "@/components/properties/properties-grid";
-import { ResidencesSection } from "@/components/residences-section";
-import CommercialCenter from "@/components/CommercialCenter/CommercialCenter";
+import CTA from "@/components/CommercialCenter/CTA";
 import { PropertiesCta } from "@/components/properties/properties-cta";
 import LenisWrapper from "@/components/LenisWrapper";
 
@@ -31,8 +30,11 @@ export default function PropertiesPage() {
       <LenisWrapper>
         <PropertiesHero />
         <PropertiesGrid />
-        <ResidencesSection />
-        <CommercialCenter />
+        <section className="py-8 md:py-12">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <CTA />
+          </div>
+        </section>
         <PropertiesCta />
       </LenisWrapper>
 

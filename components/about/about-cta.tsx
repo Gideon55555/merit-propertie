@@ -41,14 +41,14 @@ export function AboutCta() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   asChild
-                  className="bg-merit-gold hover:bg-merit-gold/90 text-black"
+                  className="bg-merit-gold hover:bg-merit-gold/90 text-merit-green font-bold shadow-md"
                 >
                   <Link href="/properties">View Properties</Link>
                 </Button>
                 <Button
                   asChild
                   variant="outline"
-                  className="border-white/20 bg-transparent text-white/70 hover:text-white hover:bg-white/10"
+                  className="bg-white/10 border-2 border-white/40 text-white hover:bg-white hover:text-merit-green font-bold transition-all"
                 >
                   <Link href="/contact">
                     Contact Us <ArrowRight className="ml-2 h-4 w-4" />

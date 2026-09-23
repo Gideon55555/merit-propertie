@@ -14,6 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { MapPin, Bed, Bath, Square, Heart, ArrowRight } from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 
 export function PropertiesGrid() {
@@ -65,8 +66,8 @@ export function PropertiesGrid() {
       description:
         "Designed with innovation and efficiency in mind, maximizing every inch of space with an open kitchen, comfortable bedroom, and dual balconies.",
       features: ["Open kitchen", "Living & dining", "Built-in storage", "2 Balconies"],
-      link: "#residences",
-      buttonText: "View Floor Plan & Specs",
+      link: "/properties/one-bedroom",
+      buttonText: "View Details",
     },
     {
       id: 2,
@@ -86,8 +87,8 @@ export function PropertiesGrid() {
       description:
         "Practical and contemporary layout spanning 95 m², ideal for small families or professionals with master bedroom suite, built-in wardrobes, and balcony.",
       features: ["Master suite", "Spacious living area", "Modern kitchen", "Private balcony"],
-      link: "#residences",
-      buttonText: "View Floor Plan & Specs",
+      link: "/properties/two-bedroom",
+      buttonText: "View Details",
     },
     {
       id: 3,
@@ -107,8 +108,8 @@ export function PropertiesGrid() {
       description:
         "The pinnacle of urban luxury living with a master en-suite, two additional bedrooms, dedicated maid's room, generous living area, and parking.",
       features: ["Master en-suite", "Maid's room", "Dedicated parking", "Generous balcony"],
-      link: "#residences",
-      buttonText: "View Floor Plan & Specs",
+      link: "/properties/three-bedroom",
+      buttonText: "View Details",
     },
     {
       id: 4,
@@ -128,8 +129,8 @@ export function PropertiesGrid() {
       description:
         "Vibrant commercial development offering 335 road-access and corridor-access shops across multiple floors (SB, LG, UG, Floors 1–4) with dynamic parking.",
       features: ["335 Shops", "Road & Corridor Access", "7 Floor Levels", "High Foot Traffic"],
-      link: "#commercial-center",
-      buttonText: "Explore Commercial Center",
+      link: "/properties/commercial-center",
+      buttonText: "View Details",
     },
   ];
 
@@ -325,13 +326,12 @@ export function PropertiesGrid() {
                 <CardFooter className="pt-0 pb-6 px-6">
                   <Button
                     asChild
-                    variant="outline"
-                    className="w-full border-merit-gold/70 text-merit-gold hover:bg-merit-gold hover:text-black font-semibold h-11 transition-all"
+                    className="w-full bg-merit-gold hover:bg-merit-gold/90 text-merit-green font-bold h-11 transition-all shadow-md"
                   >
-                    <a href={property.link} className="flex items-center justify-center">
+                    <Link href={property.link} className="flex items-center justify-center">
                       <span>{property.buttonText}</span>
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </a>
+                    </Link>
                   </Button>
                 </CardFooter>
               </Card>

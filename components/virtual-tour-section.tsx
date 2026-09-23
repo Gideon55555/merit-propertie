@@ -3,6 +3,8 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
+import { View360Badge } from "@/components/properties/view-360-badge";
+import { Play, Eye, Move } from "lucide-react";
 
 const tours = [
   {
@@ -11,7 +13,7 @@ const tours = [
     subtitle: "Urban Comfort Series",
     link: "https://kuula.co/share/collection/7Hmj9?logo=1&info=1&fs=1&vr=0&thumbs=1",
     label: "49 sqm",
-    image: "/images/one-bedroom.png",
+    image: "/images/design/image-00064.png",
   },
   {
     id: "2-bedroom",
@@ -19,7 +21,7 @@ const tours = [
     subtitle: "Harmony Haven Collection",
     link: "https://kuula.co/share/collection/7HmjP?logo=1&info=1&fs=1&vr=0&thumbs=1",
     label: "75 sqm",
-    image: "/images/two-bedroom.png",
+    image: "/images/design/image-00067.png",
   },
   {
     id: "3-bedroom",
@@ -27,7 +29,7 @@ const tours = [
     subtitle: "Grand Vista Collection",
     link: "https://kuula.co/share/collection/7Hmj0?logo=1&info=1&fs=1&vr=0&thumbs=1",
     label: "109 sqm",
-    image: "/images/three-bedroom.png",
+    image: "/images/design/image-00069.png",
   },
 ];
 
@@ -81,7 +83,7 @@ export function VirtualTourSection() {
                     onClick={() => handleTourChange(tour)}
                     className={`w-full group relative overflow-hidden p-5 rounded-xl border transition-all duration-500 text-left flex items-center justify-between ${
                       activeTour.id === tour.id
-                        ? "border-merit-gold bg-merit-gold text-white shadow-xl translate-x-2"
+                        ? "border-merit-gold bg-merit-gold text-merit-green shadow-xl translate-x-2"
                         : "border-merit-gold/30 bg-transparent text-merit-green hover:border-merit-gold hover:bg-merit-gold/5"
                     }`}
                   >
@@ -89,16 +91,16 @@ export function VirtualTourSection() {
                       <h4
                         className={`text-xl font-serif font-bold transition-colors ${
                           activeTour.id === tour.id
-                            ? "text-white"
+                            ? "text-merit-green"
                             : "group-hover:text-merit-gold"
                         }`}
                       >
                         {tour.title}
                       </h4>
                       <p
-                        className={`text-sm font-medium opacity-80 ${
+                        className={`text-sm font-medium ${
                           activeTour.id === tour.id
-                            ? "text-white"
+                            ? "text-merit-green/85"
                             : "text-gray-500"
                         }`}
                       >
@@ -109,7 +111,7 @@ export function VirtualTourSection() {
                       <span
                         className={`text-xs font-bold font-sans ${
                           activeTour.id === tour.id
-                            ? "text-white/80"
+                            ? "text-merit-green"
                             : "text-merit-gold"
                         }`}
                       >
@@ -149,42 +151,53 @@ export function VirtualTourSection() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-cover bg-center"
+                      onClick={() => setIsTourStarted(true)}
+                      className="absolute inset-0 z-10 flex flex-col justify-between p-4 sm:p-6 cursor-pointer select-none bg-cover bg-center group/card overflow-hidden"
                       style={{ backgroundImage: `url(${activeTour.image})` }}
                     >
-                      <div className="absolute inset-0 bg-merit-green/60 backdrop-blur-sm" />
-                      <div className="relative z-20 text-center p-6">
-                        <div className="mb-6 inline-flex p-4 bg-white/10 rounded-full border border-white/20">
-                          <svg
-                            className="w-12 h-12 text-merit-gold"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={1}
-                              d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                            />
-                          </svg>
-                        </div>
-                        <h3 className="text-2xl font-serif font-bold text-white mb-2">
-                          Ready to Explore?
-                        </h3>
-                        <p className="text-white/70 mb-8 max-w-xs mx-auto">
-                          Click below to launch the interactive 360° tour of our{" "}
-                          {activeTour.title}.
-                        </p>
-                        <button
-                          onClick={() => setIsTourStarted(true)}
-                          className="bg-merit-gold hover:bg-merit-gold/90 text-white px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg group"
-                        >
-                          Start Virtual Tour
-                          <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">
-                            →
+                      {/* Dark Vignette Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/75 group-hover/card:via-black/35 transition-colors duration-500" />
+
+                      {/* Top HUD Bar */}
+                      <div className="relative z-20 flex items-center justify-between gap-2">
+                        <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[11px] font-semibold text-white tracking-wide shadow-md">
+                          <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                           </span>
-                        </button>
+                          <span>LIVE 3D TOUR</span>
+                        </div>
+
+                        <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-merit-gold/20 backdrop-blur-md border border-merit-gold/40 text-[11px] font-bold text-merit-gold tracking-widest uppercase shadow-md">
+                          <span>360° PANORAMA</span>
+                        </div>
+                      </div>
+
+                      {/* Center Content: View360Badge + Play CTA */}
+                      <div className="relative z-20 flex flex-col items-center justify-center my-auto py-2 text-center">
+                        <View360Badge className="mb-3 scale-90 sm:scale-100" />
+
+                        <div className="inline-flex items-center gap-2 bg-merit-gold hover:bg-merit-gold/90 text-merit-green px-6 py-3 rounded-full font-bold text-sm shadow-[0_10px_30px_rgba(192,178,131,0.5)] transform group-hover/card:scale-105 transition-all">
+                          <Play className="w-4 h-4 fill-current" />
+                          <span>Start 360° Virtual Tour</span>
+                        </div>
+
+                        <p className="text-white/80 text-xs mt-2 font-medium tracking-wide drop-shadow">
+                          {activeTour.title} • {activeTour.label}
+                        </p>
+                      </div>
+
+                      {/* Bottom HUD Bar */}
+                      <div className="relative z-20 flex items-center justify-between gap-2 text-[11px] text-white/90">
+                        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/60 backdrop-blur-md border border-white/10">
+                          <Eye className="w-3 h-3 text-merit-gold" />
+                          <span>Interactive 360°</span>
+                        </div>
+
+                        <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/60 backdrop-blur-md border border-white/10">
+                          <Move className="w-3 h-3 text-merit-gold" />
+                          <span>Drag to look around</span>
+                        </div>
                       </div>
                     </motion.div>
                   ) : (

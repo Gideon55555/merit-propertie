@@ -18,12 +18,6 @@ export default function ShopStats({ floor }: ShopStatsProps) {
   );
   const totalShopsOnFloor = roadCount + corridorCount;
 
-  const allSizes = [
-    ...floor.inventory.roadAccess.map((i) => parseInt(i.size)),
-    ...floor.inventory.corridorAccess.map((i) => parseInt(i.size)),
-  ];
-  const minSize = allSizes.length ? Math.min(...allSizes) : 11;
-  const maxSize = allSizes.length ? Math.max(...allSizes) : 32;
 
   const stats = [
     {

@@ -32,8 +32,8 @@ export default function CTA() {
       <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto z-10 pt-2">
         {/* Tour Booking Link */}
         <Link
-          href="#contact"
-          className="w-full sm:w-auto px-6 py-3 bg-merit-gold hover:bg-merit-gold/90 font-medium text-base rounded transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2 group/btn cursor-pointer font-secondary no-underline"
+          href="/contact"
+          className="w-full sm:w-auto px-6 py-3 bg-merit-green hover:bg-merit-green/90 text-white font-bold text-base rounded transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2 group/btn cursor-pointer font-secondary no-underline"
         >
           <span>Schedule a Commercial Tour</span>
           <svg
@@ -55,7 +55,7 @@ export default function CTA() {
         <a
           href="/documents/New Green Village Floor plan.pdf"
           download="Merit_Commercial_Center_Brochure.pdf"
-          className="w-full sm:w-auto px-6 py-3 bg-transparent text-merit-gold border border-merit-gold text-base rounded transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer font-secondary decoration-none"
+          className="w-full sm:w-auto px-6 py-3 bg-white text-merit-green border-2 border-merit-green hover:bg-merit-green hover:text-white font-bold text-base rounded transition-all duration-300 shadow-sm hover:shadow-md flex items-center justify-center space-x-2 cursor-pointer font-secondary decoration-none"
         >
           <span>Download Brochure</span>
           <svg

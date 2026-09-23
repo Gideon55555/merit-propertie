@@ -96,14 +96,16 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <ShimmerButton
-              background="rgb(var(--merit-gold)"
-              className="shadow-2xl bg-merit-gold hover:bg-merit-gold/90"
-            >
-              <span className="whitespace-pre-wrap text-merit-green text-center text-sm font-medium leading-none tracking-tight lg:text-lg">
-                Get in Touch
-              </span>
-            </ShimmerButton>
+            <Link href="/contact">
+              <ShimmerButton
+                background="rgb(var(--merit-gold)"
+                className="shadow-2xl bg-merit-gold hover:bg-merit-gold/90 cursor-pointer"
+              >
+                <span className="whitespace-pre-wrap text-merit-green text-center text-sm font-medium leading-none tracking-tight lg:text-lg">
+                  Get in Touch
+                </span>
+              </ShimmerButton>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -142,10 +144,11 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <Button
+                  asChild
                   className="bg-merit-gold hover:bg-merit-gold/90 text-black w-full"
                   onClick={() => openNav(false)}
                 >
-                  Get in Touch
+                  <Link href="/contact">Get in Touch</Link>
                 </Button>
               </div>
             </motion.div>

@@ -45,9 +45,8 @@ export function LocationCta() {
               </Button>
               <Button
                 asChild
-                variant="outline"
-                className="border-white/20 bg-transparent text-white/70 hover:text-white hover:bg-white/10">
-                <Link href="/schedule-viewing">
+                className="bg-white text-merit-green hover:bg-white/90 font-semibold shadow-md px-6">
+                <Link href="/contact">
                   <Calendar className="mr-2 h-4 w-4" /> Schedule a Viewing{" "}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
