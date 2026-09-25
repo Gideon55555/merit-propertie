@@ -1,11 +1,19 @@
 import type React from "react";
 import type { Metadata } from "next";
+import { Noto_Sans_Ethiopic } from "next/font/google";
 import { Avenir, GlensCity } from "@/lib/fonts";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 // import Footer from "@/components/footer";
+
+const ethiopic = Noto_Sans_Ethiopic({
+  subsets: ["ethiopic"],
+  weight: ["400", "500"],
+  variable: "--font-ethiopic",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title:
@@ -55,7 +63,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${GlensCity.variable} ${Avenir.variable}`}>
+      <body className={`${GlensCity.variable} ${Avenir.variable} ${ethiopic.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

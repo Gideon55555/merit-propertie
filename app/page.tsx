@@ -1,4 +1,4 @@
-import { HeroSection } from "@/components/hero-section";
+import { AnniversaryHome } from "@/components/home/anniversary-home";
 import { PrefaceSection } from "@/components/preface-section";
 import { RevolutionizingSection } from "@/components/revolutionizing-section";
 import { ChampioningSection } from "@/components/championing-section";
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <LenisWrapper>
-        <HeroSection />
+        <AnniversaryHome />
         <PrefaceSection />
         <RevolutionizingSection />
         <DroneFootageSection />
