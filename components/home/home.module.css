@@ -22,6 +22,7 @@
 .stage {
   position: relative;
   --p: 0;
+  --s: 0;
 }
 
 .stage__bg {
@@ -35,8 +36,8 @@
 .stage__zoom {
   position: absolute;
   inset: 0;
-  transform: scale(calc(1 + var(--p) * 0.14));
-  transform-origin: 50% 60%;
+  transform: translate3d(0, calc(var(--s) * -10%), 0) scale(calc(1.04 + var(--s) * 0.14));
+  transform-origin: 50% 38%;
   will-change: transform;
 }
 
@@ -207,6 +208,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
+  opacity: calc(1 - var(--s) * 0.45);
   background:
     linear-gradient(90deg, var(--teal-80) 0%, var(--teal-40) 34%, var(--teal-0) 62%),
     linear-gradient(180deg, var(--teal-40) 0%, var(--teal-0) 20%, var(--teal-0) 70%, var(--teal-40) 100%);
@@ -226,7 +228,8 @@
   pointer-events: none;
   background:
     radial-gradient(ellipse 70% 60% at 50% 50%, var(--teal-40), var(--teal-80));
-  opacity: var(--p);
+  /* Stay clear through the sold section, then fade out as welcome arrives. */
+  opacity: clamp(0, calc((var(--s) - 0.55) / 0.45), 1);
 }
 
 .stage__grain {
@@ -1271,13 +1274,22 @@
 
 .marquee__track {
   display: flex;
-  align-items: center;
-  gap: 3rem;
   width: max-content;
-  animation: marquee 40s linear infinite;
+  animation: marquee 80s linear infinite;
+}
+
+.marquee__group {
+  display: flex;
+  align-items: center;
+  flex: none;
 }
 
 .marquee__track span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3rem;
+  flex: none;
+  padding-right: 3rem;
   font-family: var(--display);
   font-size: 1.5rem;
   letter-spacing: 0.06em;
@@ -1295,6 +1307,7 @@
 }
 
 .marquee__track i {
+  flex: none;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -1302,7 +1315,8 @@
 }
 
 @keyframes marquee {
-  to { transform: translateX(calc(-50% - 1.5rem)); }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 /* ---------- Entrance reveals ---------- */

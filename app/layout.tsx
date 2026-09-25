@@ -70,7 +70,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange>
           <Navbar />
-          <main className="overflow-x-hidden">{children}</main>
+          <main className="overflow-x-clip">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

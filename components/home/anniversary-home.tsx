@@ -32,8 +32,14 @@ export function AnniversaryHome() {
 
   useEffect(() => {
     const onScroll = () => {
-      const progress = Math.min(1, Math.max(0, window.scrollY / window.innerHeight));
-      stageRef.current?.style.setProperty("--p", progress.toFixed(4));
+      const stage = stageRef.current;
+      if (!stage) return;
+      const viewHeight = window.innerHeight || 1;
+      const heroProgress = Math.min(1, Math.max(0, window.scrollY / viewHeight));
+      // Slide the same hero image through the next section (sold), then let it fade.
+      const slide = Math.min(1, Math.max(0, window.scrollY / (viewHeight * 2)));
+      stage.style.setProperty("--p", heroProgress.toFixed(4));
+      stage.style.setProperty("--s", slide.toFixed(4));
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
