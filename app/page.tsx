@@ -13,6 +13,7 @@ import { ScrollToTop } from "@/components/scroll-to-top";
 import { DroneFootageSection } from "@/components/drone-footage-section";
 import { VirtualTourSection } from "@/components/virtual-tour-section";
 import ChatWidget from "@/components/chat/ChatWidget";
+import GiveawayPopupLoader from "@/components/GiveawayPopupLoader";
 
 export const metadata: Metadata = {
   title:
@@ -38,6 +39,7 @@ export default function Home() {
         <ContactSection />
         <ScrollToTop />
         <ChatWidget />
+        <GiveawayPopupLoader />
       </LenisWrapper>
 
       {/* JSON-LD structured data for SEO */}

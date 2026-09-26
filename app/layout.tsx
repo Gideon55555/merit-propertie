@@ -63,6 +63,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Preload the hero image for faster LCP */}
+        <link
+          rel="preload"
+          href="/images/anniversary-hero.webp"
+          as="image"
+          type="image/webp"
+        />
+        {/* Warm up connection to Google Apps Script for the giveaway form */}
+        <link rel="dns-prefetch" href="https://script.google.com" />
+        <link rel="preconnect" href="https://script.google.com" crossOrigin="anonymous" />
+      </head>
       <body className={`${GlensCity.variable} ${Avenir.variable} ${ethiopic.variable}`}>
         <ThemeProvider
           attribute="class"

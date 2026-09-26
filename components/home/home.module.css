@@ -1392,6 +1392,21 @@
   }
 
   .mouse { bottom: 1.25rem; }
+
+  /* Reduce section heights on mobile to avoid huge empty gaps */
+  .welcome {
+    min-height: auto;
+    padding: 4rem var(--pad);
+  }
+
+  .sold {
+    min-height: auto;
+    padding: 4rem var(--pad);
+  }
+
+  .sold__inner {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 560px) {
@@ -1400,6 +1415,22 @@
   .hero__ctas > :global(a) { width: 100%; }
   .welcome__eyebrow { font-size: 0.6rem; letter-spacing: 0.2em; gap: 0.6rem; }
   .welcome__eyebrow span { width: 24px; }
+
+  .welcome {
+    padding: 3rem var(--pad);
+  }
+
+  .welcome__title {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+
+  .sold {
+    padding: 3rem var(--pad);
+  }
+
+  .sold__count {
+    font-size: clamp(4rem, 18vw, 8rem);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

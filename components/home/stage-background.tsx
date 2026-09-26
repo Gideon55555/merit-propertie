@@ -1,6 +1,7 @@
 "use client";
 
 import type { RefObject } from "react";
+import Image from "next/image";
 import s from "./home.module.css";
 import { SkyCanvas } from "./sky-canvas";
 
@@ -15,7 +16,15 @@ export function StageBackground({ mediaRef, stageRef, motionEnabled }: StageBack
     <div className={s["stage__bg"]} aria-hidden="true">
       <div className={s["stage__zoom"]}>
         <div className={s["stage__media"]} ref={mediaRef}>
-          <img src="/images/anniversary-hero.webp" alt="" className={s["stage__image"]} />
+          <Image
+            src="/images/anniversary-hero.webp"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            quality={80}
+            className={s["stage__image"]}
+          />
         </div>
       </div>
       <div className={s["stage__light"]} />
