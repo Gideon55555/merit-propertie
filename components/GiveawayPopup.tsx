@@ -22,7 +22,7 @@ export default function GiveawayPopup() {
 
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 3000); // 3 seconds
+    }, 5000); // 5 seconds
 
     return () => clearTimeout(timer);
   }, []);
