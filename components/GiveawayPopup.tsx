@@ -464,7 +464,7 @@ export default function GiveawayPopup() {
           {/* Visit website link */}
           <div className="mt-6 text-center">
             <a
-              href="https://meritrealestate.com"
+              href="https://meritproperties.et"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm font-sans transition-all duration-200 hover:underline"
