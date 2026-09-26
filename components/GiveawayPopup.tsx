@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbylg_u7GBmHTxEHrmQA-0iPTgRF-7PI78UfsIW1FVNt9wbVmDgD4iSQM8LDWChvBmBU/exec";
+  process.env.NEXT_PUBLIC_GIVEAWAY_SCRIPT_URL || "";
 
 export default function GiveawayPopup() {
   const [isVisible, setIsVisible] = useState(false);
@@ -362,7 +362,6 @@ export default function GiveawayPopup() {
                   style={{
                     background: "rgb(255 255 255 / 0.08)",
                     border: "1px solid rgb(192 178 131 / 0.3)",
-                    focusRingColor: "rgb(192, 178, 131)",
                   }}
                   onFocus={(e) => {
                     e.currentTarget.style.borderColor = "rgb(192, 178, 131)";
